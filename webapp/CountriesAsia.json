@@ -1,0 +1,566 @@
+[
+    {
+        "id": 1,
+        "en": {
+            "country": "Afghanistan",
+            "capital": "Kabul"
+        },
+        "pl": {
+            "country": "Afganistan",
+            "capital": "Kabul"
+        },
+        "flag": "https://flagpedia.net/data/flags/h80/af.png"
+    },
+    {
+        "id": 2,
+        "en": {
+            "country": "Armenia",
+            "capital": "Yerevan"
+        },
+        "pl": {
+            "country": "Armenia",
+            "capital": "Erywań"
+        },
+        "flag": "https://flagpedia.net/data/flags/h80/am.png"
+    },
+    {
+        "id": 3,
+        "en": {
+            "country": "Azerbaijan",
+            "capital": "Baku"
+        },
+        "pl": {
+            "country": "Azerbejdżan",
+            "capital": "Baku"
+        },
+        "flag": "https://flagpedia.net/data/flags/h80/az.png"
+    },
+    {
+        "id": 4,
+        "en": {
+            "country": "Bahrain",
+            "capital": "Manama"
+        },
+        "pl": {
+            "country": "Bahrajn",
+            "capital": "Manama"
+        },
+        "flag": "https://flagpedia.net/data/flags/h80/bh.png"
+    },
+    {
+        "id": 5,
+        "en": {
+            "country": "Bangladesh",
+            "capital": "Dhaka"
+        },
+        "pl": {
+            "country": "Bangladesz",
+            "capital": "Dhaka"
+        },
+        "flag": "https://flagpedia.net/data/flags/h80/bd.png"
+    },
+    {
+        "id": 6,
+        "en": {
+            "country": "Bhutan",
+            "capital": "Thimphu"
+        },
+        "pl": {
+            "country": "Bhutan",
+            "capital": "Thimphu"
+        },
+        "flag": "https://flagpedia.net/data/flags/h80/bt.png"
+    },
+    {
+        "id": 7,
+        "en": {
+            "country": "Brunei",
+            "capital": "Bandar Seri Begawan"
+        },
+        "pl": {
+            "country": "Brunei",
+            "capital": "Bandar Seri Begawan"
+        },
+        "flag": "https://flagpedia.net/data/flags/h80/bn.png"
+    },
+    {
+        "id": 8,
+        "en": {
+            "country": "Cambodia",
+            "capital": "Phnom Penh"
+        },
+        "pl": {
+            "country": "Kambodża",
+            "capital": "Phnom Penh"
+        },
+        "flag": "https://flagpedia.net/data/flags/h80/kh.png"
+    },
+    {
+        "id": 9,
+        "en": {
+            "country": "Cyprus",
+            "capital": "Nicosia"
+        },
+        "pl": {
+            "country": "Cypr",
+            "capital": "Nikozja"
+        },
+        "flag": "https://flagpedia.net/data/flags/h80/cy.png"
+    },
+    {
+        "id": 10,
+        "en": {
+            "country": "Georgia",
+            "capital": "Tbilisi"
+        },
+        "pl": {
+            "country": "Gruzja",
+            "capital": "Tbilisi"
+        },
+        "flag": "https://flagpedia.net/data/flags/h80/ge.png"
+    },
+    {
+        "id": 11,
+        "en": {
+            "country": "India",
+            "capital": "New Delhi"
+        },
+        "pl": {
+            "country": "Indie",
+            "capital": "Nowe Delhi"
+        },
+        "flag": "https://flagpedia.net/data/flags/h80/in.png"
+    },
+    {
+        "id": 12,
+        "en": {
+            "country": "Indonesia",
+            "capital": "Jakarta"
+        },
+        "pl": {
+            "country": "Indonezja",
+            "capital": "Dżakarta"
+        },
+        "flag": "https://flagpedia.net/data/flags/h80/id.png"
+    },
+    {
+        "id": 13,
+        "en": {
+            "country": "Iran",
+            "capital": "Tehran"
+        },
+        "pl": {
+            "country": "Iran",
+            "capital": "Teheran"
+        },
+        "flag": "https://flagpedia.net/data/flags/h80/ir.png"
+    },
+    {
+        "id": 14,
+        "en": {
+            "country": "Iraq",
+            "capital": "Baghdad"
+        },
+        "pl": {
+            "country": "Irak",
+            "capital": "Bagdad"
+        },
+        "flag": "https://flagpedia.net/data/flags/h80/iq.png"
+    },
+    {
+        "id": 15,
+        "en": {
+            "country": "Israel",
+            "capital": "Jerusalem"
+        },
+        "pl": {
+            "country": "Izrael",
+            "capital": "Jerozolima"
+        },
+        "flag": "https://flagpedia.net/data/flags/h80/il.png"
+    },
+    {
+        "id": 16,
+        "en": {
+            "country": "Japan",
+            "capital": "Tokyo"
+        },
+        "pl": {
+            "country": "Japonia",
+            "capital": "Tokio"
+        },
+        "flag": "https://flagpedia.net/data/flags/h80/jp.png"
+    },
+    {
+        "id": 17,
+        "en": {
+            "country": "Jordan",
+            "capital": "Amman"
+        },
+        "pl": {
+            "country": "Jordania",
+            "capital": "Amman"
+        },
+        "flag": "https://flagpedia.net/data/flags/h80/jo.png"
+    },
+    {
+        "id": 18,
+        "en": {
+            "country": "Kazakhstan",
+            "capital": "Astana"
+        },
+        "pl": {
+            "country": "Kazachstan",
+            "capital": "Astana"
+        },
+        "flag": "https://flagpedia.net/data/flags/h80/kz.png"
+    },
+    {
+        "id": 19,
+        "en": {
+            "country": "Kuwait",
+            "capital": "Kuwait"
+        },
+        "pl": {
+            "country": "Kuwejt",
+            "capital": "Kuwejt"
+        },
+        "flag": "https://flagpedia.net/data/flags/h80/kw.png"
+    },
+    {
+        "id": 20,
+        "en": {
+            "country": "Kyrgyzstan",
+            "capital": "Bishkek"
+        },
+        "pl": {
+            "country": "Kirgistan",
+            "capital": "Biszkek"
+        },
+        "flag": "https://flagpedia.net/data/flags/h80/kg.png"
+    },
+    {
+        "id": 21,
+        "en": {
+            "country": "Laos",
+            "capital": "Vientiane"
+        },
+        "pl": {
+            "country": "Laos",
+            "capital": "Wientian"
+        },
+        "flag": "https://flagpedia.net/data/flags/h80/la.png"
+    },
+    {
+        "id": 22,
+        "en": {
+            "country": "Lebanon",
+            "capital": "Beirut"
+        },
+        "pl": {
+            "country": "Liban",
+            "capital": "Bejrut"
+        },
+        "flag": "https://flagpedia.net/data/flags/h80/lb.png"
+    },
+    {
+        "id": 23,
+        "en": {
+            "country": "Malaysia",
+            "capital": "Kuala Lumpur"
+        },
+        "pl": {
+            "country": "Malezja",
+            "capital": "Kuala Lumpur"
+        },
+        "flag": "https://flagpedia.net/data/flags/h80/my.png"
+    },
+    {
+        "id": 24,
+        "en": {
+            "country": "Maldives",
+            "capital": "Malé"
+        },
+        "pl": {
+            "country": "Malediwy",
+            "capital": "Malé"
+        },
+        "flag": "https://flagpedia.net/data/flags/h80/mv.png"
+    },
+    {
+        "id": 25,
+        "en": {
+            "country": "Mongolia",
+            "capital": "Ulaanbaatar"
+        },
+        "pl": {
+            "country": "Mongolia",
+            "capital": "Ułan Bator"
+        },
+        "flag": "https://flagpedia.net/data/flags/h80/mn.png"
+    },
+    {
+        "id": 26,
+        "en": {
+            "country": "Myanmar",
+            "capital": "Naypyidaw"
+        },
+        "pl": {
+            "country": "Mjanma",
+            "capital": "Naypyidaw"
+        },
+        "flag": "https://flagpedia.net/data/flags/h80/mm.png"
+    },
+    {
+        "id": 27,
+        "en": {
+            "country": "Nepal",
+            "capital": "Kathmandu"
+        },
+        "pl": {
+            "country": "Nepal",
+            "capital": "Katmandu"
+        },
+        "flag": "https://flagpedia.net/data/flags/h80/np.png"
+    },
+    {
+        "id": 28,
+        "en": {
+            "country": "North Korea",
+            "capital": "Pyongyang"
+        },
+        "pl": {
+            "country": "Korea Północna",
+            "capital": "Pjongjang"
+        },
+        "flag": "https://flagpedia.net/data/flags/h80/kp.png"
+    },
+    {
+        "id": 29,
+        "en": {
+            "country": "Oman",
+            "capital": "Muscat"
+        },
+        "pl": {
+            "country": "Oman",
+            "capital": "Maskat"
+        },
+        "flag": "https://flagpedia.net/data/flags/h80/om.png"
+    },
+    {
+        "id": 30,
+        "en": {
+            "country": "Pakistan",
+            "capital": "Islamabad"
+        },
+        "pl": {
+            "country": "Pakistan",
+            "capital": "Islamabad"
+        },
+        "flag": "https://flagpedia.net/data/flags/h80/pk.png"
+    },
+    {
+        "id": 31,
+        "en": {
+            "country": "Philippines",
+            "capital": "Manila"
+        },
+        "pl": {
+            "country": "Filipiny",
+            "capital": "Manila"
+        },
+        "flag": "https://flagpedia.net/data/flags/h80/ph.png"
+    },
+    {
+        "id": 32,
+        "en": {
+            "country": "Qatar",
+            "capital": "Doha"
+        },
+        "pl": {
+            "country": "Katar",
+            "capital": "Doha"
+        },
+        "flag": "https://flagpedia.net/data/flags/h80/qa.png"
+    },
+    {
+        "id": 33,
+        "en": {
+            "country": "Saudi Arabia",
+            "capital": "Riyadh"
+        },
+        "pl": {
+            "country": "Arabia Saudyjska",
+            "capital": "Rijad"
+        },
+        "flag": "https://flagpedia.net/data/flags/h80/sa.png"
+    },
+    {
+        "id": 34,
+        "en": {
+            "country": "Singapore",
+            "capital": "Singapore"
+        },
+        "pl": {
+            "country": "Singapur",
+            "capital": "Singapur"
+        },
+        "flag": "https://flagpedia.net/data/flags/h80/sg.png"
+    },
+    {
+        "id": 35,
+        "en": {
+            "country": "South Korea",
+            "capital": "Seoul"
+        },
+        "pl": {
+            "country": "Korea Południowa",
+            "capital": "Seul"
+        },
+        "flag": "https://flagpedia.net/data/flags/h80/kr.png"
+    },
+    {
+        "id": 36,
+        "en": {
+            "country": "Sri Lanka",
+            "capital": "Colombo"
+        },
+        "pl": {
+            "country": "Sri Lanka",
+            "capital": "Kolombo"
+        },
+        "flag": "https://flagpedia.net/data/flags/h80/lk.png"
+    },
+    {
+        "id": 37,
+        "en": {
+            "country": "Syria",
+            "capital": "Damascus"
+        },
+        "pl": {
+            "country": "Syria",
+            "capital": "Damaszek"
+        },
+        "flag": "https://flagpedia.net/data/flags/h80/sy.png"
+    },
+    {
+        "id": 38,
+        "en": {
+            "country": "Taiwan",
+            "capital": "Taipei"
+        },
+        "pl": {
+            "country": "Tajwan",
+            "capital": "Tajpej"
+        },
+        "flag": "https://flagpedia.net/data/flags/h80/tw.png"
+    },
+    {
+        "id": 39,
+        "en": {
+            "country": "Tajikistan",
+            "capital": "Dushanbe"
+        },
+        "pl": {
+            "country": "Tadżykistan",
+            "capital": "Duszanbe"
+        },
+        "flag": "https://flagpedia.net/data/flags/h80/tj.png"
+    },
+    {
+        "id": 40,
+        "en": {
+            "country": "Thailand",
+            "capital": "Bangkok"
+        },
+        "pl": {
+            "country": "Tajlandia",
+            "capital": "Bangkok"
+        },
+        "flag": "https://flagpedia.net/data/flags/h80/th.png"
+    },
+    {
+        "id": 41,
+        "en": {
+            "country": "Timor-Leste",
+            "capital": "Dili"
+        },
+        "pl": {
+            "country": "Timor Wschodni",
+            "capital": "Dili"
+        },
+        "flag": "https://flagpedia.net/data/flags/h80/tl.png"
+    },
+    {
+        "id": 42,
+        "en": {
+            "country": "Turkey",
+            "capital": "Ankara"
+        },
+        "pl": {
+            "country": "Turcja",
+            "capital": "Ankara"
+        },
+        "flag": "https://flagpedia.net/data/flags/h80/tr.png"
+    },
+    {
+        "id": 43,
+        "en": {
+            "country": "Turkmenistan",
+            "capital": "Ashgabat"
+        },
+        "pl": {
+            "country": "Turkmenistan",
+            "capital": "Aszchabad"
+        },
+        "flag": "https://flagpedia.net/data/flags/h80/tm.png"
+    },
+    {
+        "id": 44,
+        "en": {
+            "country": "United Arab Emirates",
+            "capital": "Abu Dhabi"
+        },
+        "pl": {
+            "country": "Zjednoczone Emiraty Arabskie",
+            "capital": "Abu Dhabi"
+        },
+        "flag": "https://flagpedia.net/data/flags/h80/ae.png"
+    },
+    {
+        "id": 45,
+        "en": {
+            "country": "Uzbekistan",
+            "capital": "Tashkent"
+        },
+        "pl": {
+            "country": "Uzbekistan",
+            "capital": "Taszkent"
+        },
+        "flag": "https://flagpedia.net/data/flags/h80/uz.png"
+    },
+    {
+        "id": 46,
+        "en": {
+            "country": "Vietnam",
+            "capital": "Hanoi"
+        },
+        "pl": {
+            "country": "Wietnam",
+            "capital": "Hanoi"
+        },
+        "flag": "https://flagpedia.net/data/flags/h80/vn.png"
+    },
+    {
+        "id": 47,
+        "en": {
+            "country": "Yemen",
+            "capital": "Sana'a"
+        },
+        "pl": {
+            "country": "Jemen",
+            "capital": "Sanaa"
+        },
+        "flag": "https://flagpedia.net/data/flags/h80/ye.png"
+    }
+]

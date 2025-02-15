@@ -1,0 +1,115 @@
+<mvc:View
+    controllerName="mpp.countries.controller.Play"
+    xmlns="sap.m"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns:core="sap.ui.core"
+    xmlns:f="sap.f"
+    xmlns:card="sap.f.cards"
+>
+    <Page
+        title="{i18n>homePageTitle}"
+    >
+        <subHeader>
+            <Toolbar>
+                <Button icon="sap-icon://nav-back" press="handleNavBack" tooltip="{i18n>buttonBack}" />
+                <ToolbarSpacer />
+                <Title text="TerraQuiz" level="H3" />
+                <ToolbarSpacer />
+            </Toolbar>
+        </subHeader>
+        <VBox id="idCardBox" justifyContent="Center" alignItems="Center">
+            <f:Card id="idCardCounter" class="sapUiSmallMargin" width="100px" height="100px">
+                <f:content>
+                    <VBox width="100%" height="100%" justifyContent="Center"
+                        alignItems="Center"
+                    >
+                    <Title text="{/oCounter/iScore}" class="sapUiTinyMargin largeFont"></Title>
+                        <FormattedText
+                            htmlText="{/oCounter/iCurrentQuestionNo}/{/oCounter/iQuestionsLimit}"
+                            class="sapUiTinyMargin largeFont"
+                            textAlign="Center" />
+                    </VBox>
+                </f:content>
+            </f:Card>
+            <f:Card id="idCard" class="sapUiMediumMarginBottom" width="300px" height="300px">
+                <f:content>
+                    <VBox id="idContentBox" width="100%" height="100%" justifyContent="Center"
+                        alignItems="Center"
+                    >
+                        <FormattedText
+                            htmlText="{/oAnswerData/sQuestion}"
+                            class="sapUiSmallMargin largeBoldFont"
+                            textAlign="Center"
+                            visible="{= ${/oAnswerData/bGraphicQuestion} === false}" />
+                        <Image src="{/oAnswerData/sFlagPath}" class="blackBorder"
+                            visible="{/oAnswerData/bGraphicQuestion}"></Image>
+                    </VBox>
+                </f:content>
+            </f:Card>
+        </VBox>
+        <VBox>
+
+            <HBox id="idAnswerBox1" justifyContent="Center">
+                <Button text="{/oAnswerData/buttonAText}" press="handleAnswer" width="150px"
+                    class="sapUiSmallMargin" type="{/oButtonStates/buttonAState}"
+                    enabled="{/oButtonStates/buttonAEnabled}"
+                    visible="{/oButtonStates/buttonAVisible}"></Button>
+                <Button text="{/oAnswerData/buttonBText}" press="handleAnswer" width="150px"
+                    class="sapUiSmallMargin" type="{/oButtonStates/buttonBState}"
+                    enabled="{/oButtonStates/buttonBEnabled}"
+                    visible="{/oButtonStates/buttonBVisible}"></Button>
+            </HBox>
+            <HBox id="idAnswerBox2" justifyContent="Center">
+                <Button text="{/oAnswerData/buttonCText}" press="handleAnswer" width="150px"
+                    class="sapUiSmallMargin" type="{/oButtonStates/buttonCState}"
+                    enabled="{/oButtonStates/buttonCEnabled}"
+                    visible="{/oButtonStates/buttonCVisible}"></Button>
+                <Button text="{/oAnswerData/buttonDText}" press="handleAnswer" width="150px"
+                    class="sapUiSmallMargin" type="{/oButtonStates/buttonDState}"
+                    enabled="{/oButtonStates/buttonDEnabled}"
+                    visible="{/oButtonStates/buttonDVisible}"></Button>
+            </HBox>
+            <HBox id="idAnswerBox3" justifyContent="Center">
+                <Button text="{/oAnswerData/buttonEText}" press="handleAnswer" width="150px"
+                    class="sapUiSmallMargin" type="{/oButtonStates/buttonEState}"
+                    enabled="{/oButtonStates/buttonEEnabled}"
+                    visible="{/oButtonStates/buttonEVisible}"></Button>
+                <Button text="{/oAnswerData/buttonFText}" press="handleAnswer" width="150px"
+                    class="sapUiSmallMargin" type="{/oButtonStates/buttonFState}"
+                    enabled="{/oButtonStates/buttonFEnabled}"
+                    visible="{/oButtonStates/buttonFVisible}"></Button>
+            </HBox>
+            <HBox id="idAnswerBox4" justifyContent="Center">
+                <Button text="{/oAnswerData/buttonGText}" press="handleAnswer" width="150px"
+                    class="sapUiSmallMargin" type="{/oButtonStates/buttonGState}"
+                    enabled="{/oButtonStates/buttonGEnabled}"
+                    visible="{/oButtonStates/buttonGVisible}"></Button>
+                <Button text="{/oAnswerData/buttonHText}" press="handleAnswer" width="150px"
+                    class="sapUiSmallMargin" type="{/oButtonStates/buttonHState}"
+                    enabled="{/oButtonStates/buttonHEnabled}"
+                    visible="{/oButtonStates/buttonHVisible}"></Button>
+            </HBox>
+            <VBox id="idAnswerBox5" alignItems="Center" visible="{/oInputField/visible}">
+                <HBox justifyContent="Center" alignItems="Center">
+                    <Label
+                        text="{i18n>labelForInputField}:" vAlign="Middle"
+                        labelFor="idInputField" class="sapUiTinyMargin" design="Bold"></Label>
+                    <Input id="idInputField" submit="handleAnswerFromInputField"
+                        class="{/oInputField/styleClass}"> </Input>
+
+                </HBox>
+                <HBox justifyContent="Center" alignItems="Center" visible="{/oInputField/correctAnswerVisible}">
+                    <Label
+                        text="{i18n>labelForCorrectAnswer}:" vAlign="Middle"
+                        labelFor="idCorrectAnswerText" class="sapUiTinyMargin" design="Bold"></Label>
+                    <Text text="{/oAnswerData/correctAnswer}"></Text>
+                </HBox>
+                <Button id="idOkButton" text="Ok" width="150px" class="sapUiSmallMargin"
+                    press="handleAnswerFromInputField" visible="false"></Button>
+            </VBox>
+
+        </VBox>
+    </Page>
+
+
+</mvc:View>

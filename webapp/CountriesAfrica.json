@@ -1,0 +1,638 @@
+[
+    {
+        "id": 1,
+        "en": {
+            "country": "Algeria",
+            "capital": "Algiers"
+        },
+        "pl": {
+            "country": "Algieria",
+            "capital": "Algier"
+        },
+        "flag": "https://flagpedia.net/data/flags/h80/dz.png"
+    },
+    {
+        "id": 2,
+        "en": {
+            "country": "Angola",
+            "capital": "Luanda"
+        },
+        "pl": {
+            "country": "Angola",
+            "capital": "Luanda"
+        },
+        "flag": "https://flagpedia.net/data/flags/h80/ao.png"
+    },
+    {
+        "id": 3,
+        "en": {
+            "country": "Benin",
+            "capital": "Porto-Novo"
+        },
+        "pl": {
+            "country": "Benin",
+            "capital": "Porto-Novo"
+        },
+        "flag": "https://flagpedia.net/data/flags/h80/bj.png"
+    },
+    {
+        "id": 4,
+        "en": {
+            "country": "Botswana",
+            "capital": "Gaborone"
+        },
+        "pl": {
+            "country": "Botswana",
+            "capital": "Gaborone"
+        },
+        "flag": "https://flagpedia.net/data/flags/h80/bw.png"
+    },
+    {
+        "id": 5,
+        "en": {
+            "country": "Burkina Faso",
+            "capital": "Ouagadougou"
+        },
+        "pl": {
+            "country": "Burkina Faso",
+            "capital": "Ouagadougou"
+        },
+        "flag": "https://flagpedia.net/data/flags/h80/bf.png"
+    },
+    {
+        "id": 6,
+        "en": {
+            "country": "Burundi",
+            "capital": "Bujumbura"
+        },
+        "pl": {
+            "country": "Burundi",
+            "capital": "Bużumbura"
+        },
+        "flag": "https://flagpedia.net/data/flags/h80/bi.png"
+    },
+    {
+        "id": 7,
+        "en": {
+            "country": "Cabo Verde",
+            "capital": "Praia"
+        },
+        "pl": {
+            "country": "Republika Zielonego Przylądka",
+            "capital": "Praia"
+        },
+        "flag": "https://flagpedia.net/data/flags/h80/cv.png"
+    },
+    {
+        "id": 8,
+        "en": {
+            "country": "Cameroon",
+            "capital": "Yaoundé"
+        },
+        "pl": {
+            "country": "Kamerun",
+            "capital": "Jaunde"
+        },
+        "flag": "https://flagpedia.net/data/flags/h80/cm.png"
+    },
+    {
+        "id": 9,
+        "en": {
+            "country": "Central African Republic",
+            "capital": "Bangui"
+        },
+        "pl": {
+            "country": "Republika Środkowoafrykańska",
+            "capital": "Bangi"
+        },
+        "flag": "https://flagpedia.net/data/flags/h80/cf.png"
+    },
+    {
+        "id": 10,
+        "en": {
+            "country": "Chad",
+            "capital": "N'Djamena"
+        },
+        "pl": {
+            "country": "Czad",
+            "capital": "N'Dżamena"
+        },
+        "flag": "https://flagpedia.net/data/flags/h80/td.png"
+    },
+    {
+        "id": 11,
+        "en": {
+            "country": "Comoros",
+            "capital": "Moroni"
+        },
+        "pl": {
+            "country": "Komory",
+            "capital": "Moroni"
+        },
+        "flag": "https://flagpedia.net/data/flags/h80/km.png"
+    },
+    {
+        "id": 12,
+        "en": {
+            "country": "Democratic Republic of the Congo",
+            "capital": "Kinshasa"
+        },
+        "pl": {
+            "country": "Demokratyczna Republika Konga",
+            "capital": "Kinszasa"
+        },
+        "flag": "https://flagpedia.net/data/flags/h80/cd.png"
+    },
+    {
+        "id": 13,
+        "en": {
+            "country": "Djibouti",
+            "capital": "Djibouti"
+        },
+        "pl": {
+            "country": "Dżibuti",
+            "capital": "Dżibuti"
+        },
+        "flag": "https://flagpedia.net/data/flags/h80/dj.png"
+    },
+    {
+        "id": 14,
+        "en": {
+            "country": "Egypt",
+            "capital": "Cairo"
+        },
+        "pl": {
+            "country": "Egipt",
+            "capital": "Kair"
+        },
+        "flag": "https://flagpedia.net/data/flags/h80/eg.png"
+    },
+    {
+        "id": 15,
+        "en": {
+            "country": "Equatorial Guinea",
+            "capital": "Malabo"
+        },
+        "pl": {
+            "country": "Gwinea Równikowa",
+            "capital": "Malabo"
+        },
+        "flag": "https://flagpedia.net/data/flags/h80/gq.png"
+    },
+    {
+        "id": 16,
+        "en": {
+            "country": "Eritrea",
+            "capital": "Asmara"
+        },
+        "pl": {
+            "country": "Erytrea",
+            "capital": "Asmara"
+        },
+        "flag": "https://flagpedia.net/data/flags/h80/er.png"
+    },
+    {
+        "id": 17,
+        "en": {
+            "country": "Eswatini",
+            "capital": "Mbabane"
+        },
+        "pl": {
+            "country": "Eswatini",
+            "capital": "Mbabane"
+        },
+        "flag": "https://flagpedia.net/data/flags/h80/sz.png"
+    },
+    {
+        "id": 18,
+        "en": {
+            "country": "Ethiopia",
+            "capital": "Addis Ababa"
+        },
+        "pl": {
+            "country": "Etiopia",
+            "capital": "Addis Abeba"
+        },
+        "flag": "https://flagpedia.net/data/flags/h80/et.png"
+    },
+    {
+        "id": 19,
+        "en": {
+            "country": "Gabon",
+            "capital": "Libreville"
+        },
+        "pl": {
+            "country": "Gabon",
+            "capital": "Libreville"
+        },
+        "flag": "https://flagpedia.net/data/flags/h80/ga.png"
+    },
+    {
+        "id": 20,
+        "en": {
+            "country": "The Gambia",
+            "capital": "Banjul"
+        },
+        "pl": {
+            "country": "Gambia",
+            "capital": "Bandżul"
+        },
+        "flag": "https://flagpedia.net/data/flags/h80/gm.png"
+    },
+    {
+        "id": 21,
+        "en": {
+            "country": "Ghana",
+            "capital": "Accra"
+        },
+        "pl": {
+            "country": "Ghana",
+            "capital": "Akra"
+        },
+        "flag": "https://flagpedia.net/data/flags/h80/gh.png"
+    },
+    {
+        "id": 22,
+        "en": {
+            "country": "Guinea",
+            "capital": "Conakry"
+        },
+        "pl": {
+            "country": "Gwinea",
+            "capital": "Konakry"
+        },
+        "flag": "https://flagpedia.net/data/flags/h80/gn.png"
+    },
+    {
+        "id": 23,
+        "en": {
+            "country": "Guinea-Bissau",
+            "capital": "Bissau"
+        },
+        "pl": {
+            "country": "Gwinea Bissau",
+            "capital": "Bissau"
+        },
+        "flag": "https://flagpedia.net/data/flags/h80/gw.png"
+    },
+    {
+        "id": 24,
+        "en": {
+            "country": "Ivory Coast",
+            "capital": "Yamoussoukro"
+        },
+        "pl": {
+            "country": "Wybrzeże Kości Słoniowej",
+            "capital": "Jamusukro"
+        },
+        "flag": "https://flagpedia.net/data/flags/h80/ci.png"
+    },
+    {
+        "id": 25,
+        "en": {
+            "country": "Kenya",
+            "capital": "Nairobi"
+        },
+        "pl": {
+            "country": "Kenia",
+            "capital": "Nairobi"
+        },
+        "flag": "https://flagpedia.net/data/flags/h80/ke.png"
+    },
+    {
+        "id": 26,
+        "en": {
+            "country": "Lesotho",
+            "capital": "Maseru"
+        },
+        "pl": {
+            "country": "Lesotho",
+            "capital": "Maseru"
+        },
+        "flag": "https://flagpedia.net/data/flags/h80/ls.png"
+    },
+    {
+        "id": 27,
+        "en": {
+            "country": "Liberia",
+            "capital": "Monrovia"
+        },
+        "pl": {
+            "country": "Liberia",
+            "capital": "Monrovia"
+        },
+        "flag": "https://flagpedia.net/data/flags/h80/lr.png"
+    },
+    {
+        "id": 28,
+        "en": {
+            "country": "Libya",
+            "capital": "Tripoli"
+        },
+        "pl": {
+            "country": "Libia",
+            "capital": "Trypolis"
+        },
+        "flag": "https://flagpedia.net/data/flags/h80/ly.png"
+    },
+    {
+        "id": 29,
+        "en": {
+            "country": "Madagascar",
+            "capital": "Antananarivo"
+        },
+        "pl": {
+            "country": "Madagaskar",
+            "capital": "Antananarywa"
+        },
+        "flag": "https://flagpedia.net/data/flags/h80/mg.png"
+    },
+    {
+        "id": 30,
+        "en": {
+            "country": "Malawi",
+            "capital": "Lilongwe"
+        },
+        "pl": {
+            "country": "Malawi",
+            "capital": "Lilongwe"
+        },
+        "flag": "https://flagpedia.net/data/flags/h80/mw.png"
+    },
+    {
+        "id": 31,
+        "en": {
+            "country": "Mali",
+            "capital": "Bamako"
+        },
+        "pl": {
+            "country": "Mali",
+            "capital": "Bamako"
+        },
+        "flag": "https://flagpedia.net/data/flags/h80/ml.png"
+    },
+    {
+        "id": 32,
+        "en": {
+            "country": "Mauritania",
+            "capital": "Nouakchott"
+        },
+        "pl": {
+            "country": "Mauretania",
+            "capital": "Nawakszut"
+        },
+        "flag": "https://flagpedia.net/data/flags/h80/mr.png"
+    },
+    {
+        "id": 33,
+        "en": {
+            "country": "Mauritius",
+            "capital": "Port Louis"
+        },
+        "pl": {
+            "country": "Mauritius",
+            "capital": "Port Louis"
+        },
+        "flag": "https://flagpedia.net/data/flags/h80/mu.png"
+    },
+    {
+        "id": 34,
+        "en": {
+            "country": "Morocco",
+            "capital": "Rabat"
+        },
+        "pl": {
+            "country": "Maroko",
+            "capital": "Rabat"
+        },
+        "flag": "https://flagpedia.net/data/flags/h80/ma.png"
+    },
+    {
+        "id": 35,
+        "en": {
+            "country": "Mozambique",
+            "capital": "Maputo"
+        },
+        "pl": {
+            "country": "Mozambik",
+            "capital": "Maputo"
+        },
+        "flag": "https://flagpedia.net/data/flags/h80/mz.png"
+    },
+    {
+        "id": 36,
+        "en": {
+            "country": "Namibia",
+            "capital": "Windhoek"
+        },
+        "pl": {
+            "country": "Namibia",
+            "capital": "Windhuk"
+        },
+        "flag": "https://flagpedia.net/data/flags/h80/na.png"
+    },
+    {
+        "id": 37,
+        "en": {
+            "country": "Niger",
+            "capital": "Niamey"
+        },
+        "pl": {
+            "country": "Niger",
+            "capital": "Niamey"
+        },
+        "flag": "https://flagpedia.net/data/flags/h80/ne.png"
+    },
+    {
+        "id": 38,
+        "en": {
+            "country": "Nigeria",
+            "capital": "Abuja"
+        },
+        "pl": {
+            "country": "Nigeria",
+            "capital": "Abudża"
+        },
+        "flag": "https://flagpedia.net/data/flags/h80/ng.png"
+    },
+    {
+        "id": 39,
+        "en": {
+            "country": "Rwanda",
+            "capital": "Kigali"
+        },
+        "pl": {
+            "country": "Rwanda",
+            "capital": "Kigali"
+        },
+        "flag": "https://flagpedia.net/data/flags/h80/rw.png"
+    },
+    {
+        "id": 40,
+        "en": {
+            "country": "Sao Tome and Principe",
+            "capital": "Sao Tome"
+        },
+        "pl": {
+            "country": "São Tomé i Príncipe",
+            "capital": "São Tomé"
+        },
+        "flag": "https://flagpedia.net/data/flags/h80/st.png"
+    },
+    {
+        "id": 41,
+        "en": {
+            "country": "Senegal",
+            "capital": "Dakar"
+        },
+        "pl": {
+            "country": "Senegal",
+            "capital": "Dakar"
+        },
+        "flag": "https://flagpedia.net/data/flags/h80/sn.png"
+    },
+    {
+        "id": 42,
+        "en": {
+            "country": "Seychelles",
+            "capital": "Victoria"
+        },
+        "pl": {
+            "country": "Seszele",
+            "capital": "Victoria"
+        },
+        "flag": "https://flagpedia.net/data/flags/h80/sc.png"
+    },
+    {
+        "id": 43,
+        "en": {
+            "country": "Sierra Leone",
+            "capital": "Freetown"
+        },
+        "pl": {
+            "country": "Sierra Leone",
+            "capital": "Freetown"
+        },
+        "flag": "https://flagpedia.net/data/flags/h80/sl.png"
+    },
+    {
+        "id": 44,
+        "en": {
+            "country": "Somalia",
+            "capital": "Mogadishu"
+        },
+        "pl": {
+            "country": "Somalia",
+            "capital": "Mogadiszu"
+        },
+        "flag": "https://flagpedia.net/data/flags/h80/so.png"
+    },
+    {
+        "id": 45,
+        "en": {
+            "country": "South Africa",
+            "capital": "Pretoria"
+        },
+        "pl": {
+            "country": "Republika Południowej Afryki",
+            "capital": "Pretoria"
+        },
+        "flag": "https://flagpedia.net/data/flags/h80/za.png"
+    },
+    {
+        "id": 46,
+        "en": {
+            "country": "South Sudan",
+            "capital": "Juba"
+        },
+        "pl": {
+            "country": "Południowy Sudan",
+            "capital": "Dżuba"
+        },
+        "flag": "https://flagpedia.net/data/flags/h80/ss.png"
+    },
+    {
+        "id": 47,
+        "en": {
+            "country": "Sudan",
+            "capital": "Khartoum"
+        },
+        "pl": {
+            "country": "Sudan",
+            "capital": "Chartum"
+        },
+        "flag": "https://flagpedia.net/data/flags/h80/sd.png"
+    },
+    {
+        "id": 48,
+        "en": {
+            "country": "Tanzania",
+            "capital": "Dodoma"
+        },
+        "pl": {
+            "country": "Tanzania",
+            "capital": "Dodoma"
+        },
+        "flag": "https://flagpedia.net/data/flags/h80/tz.png"
+    },
+    {
+        "id": 49,
+        "en": {
+            "country": "Togo",
+            "capital": "Lome"
+        },
+        "pl": {
+            "country": "Togo",
+            "capital": "Lome"
+        },
+        "flag": "https://flagpedia.net/data/flags/h80/tg.png"
+    },
+    {
+        "id": 50,
+        "en": {
+            "country": "Tunisia",
+            "capital": "Tunis"
+        },
+        "pl": {
+            "country": "Tunezja",
+            "capital": "Tunis"
+        },
+        "flag": "https://flagpedia.net/data/flags/h80/tn.png"
+    },
+    {
+        "id": 51,
+        "en": {
+            "country": "Uganda",
+            "capital": "Kampala"
+        },
+        "pl": {
+            "country": "Uganda",
+            "capital": "Kampala"
+        },
+        "flag": "https://flagpedia.net/data/flags/h80/ug.png"
+    },
+    {
+        "id": 52,
+        "en": {
+            "country": "Zambia",
+            "capital": "Lusaka"
+        },
+        "pl": {
+            "country": "Zambia",
+            "capital": "Lusaka"
+        },
+        "flag": "https://flagpedia.net/data/flags/h80/zm.png"
+    },
+    {
+        "id": 53,
+        "en": {
+            "country": "Zimbabwe",
+            "capital": "Harare"
+        },
+        "pl": {
+            "country": "Zimbabwe",
+            "capital": "Harare"
+        },
+        "flag": "https://flagpedia.net/data/flags/h80/zw.png"
+    }
+]

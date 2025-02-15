@@ -1,0 +1,33 @@
+<core:FragmentDefinition
+    xmlns="sap.m"
+    xmlns:core="sap.ui.core"
+>
+    <Dialog
+        id="idDialogSettings"
+        title="{i18n>titleSettings}"
+        titleAlignment="Center"
+        horizontalScrolling="false"
+        contentWidth="25%">
+        <content>
+            <Panel headerText="{i18n>titleLanguage}" expandable="false" expanded="true" width="90%"
+                class="sapUiResponsiveMargin">
+                <content>
+                    <RadioButtonGroup id="idRBGSettings" columns="2" width="100%"
+                        class="sapUiMediumMarginBottom" select="handleLanguageChange"
+                        selectedIndex="{/oConfig/selectedLanguageIndex}">
+                        <RadioButton id="idRBSettings0En" text="{i18n>labelEnglish}"/>
+                        <RadioButton id="idRBSettings1Pl" text="{i18n>labelPolish}"/>
+                    </RadioButtonGroup>
+                </content>
+            </Panel>
+        </content>
+        <buttons>
+            <Button
+                text="Confirm"
+                press="handleConfirmSettingsDialog" />
+            <Button
+                text="Cancel"
+                press="handleCloseSettingsDialog" />
+        </buttons>
+    </Dialog>
+</core:FragmentDefinition>

@@ -1,0 +1,93 @@
+<core:FragmentDefinition
+    xmlns="sap.m"
+    xmlns:core="sap.ui.core"
+>
+    <Dialog
+        id="idDialogRanking"
+        horizontalScrolling="false"
+        title="Top Scores"
+        titleAlignment="Center">
+        <content>
+            <VBox width="100%" height="100%" justifyContent="Center"
+                alignItems="Center"
+            >
+                <IconTabBar
+                    id="idIconTabBarNoIcons" backgroundDesign="Transparent" >
+                    <items>
+                        <IconTabFilter text="{i18n>regionEurope}" key="europe">
+                            <List
+                                items="{/oRanking/europeTopScores}"
+                                growing="Europe"
+                                growingThreshold="10"
+                                growingScrollToLoad="false">
+                                <StandardListItem
+                                    title="{playerName}"
+                                    counter="{score}" />
+                            </List>
+                        </IconTabFilter>
+                        <IconTabFilter text="{i18n>regionAsia}" key="asia">
+                            <List
+                                items="{/oRanking/asiaTopScores}"
+                                growing="true"
+                                growingThreshold="10"
+                                growingScrollToLoad="false">
+                                <StandardListItem
+                                    title="{playerName}"
+                                    counter="{score}" />
+                            </List>
+                        </IconTabFilter>
+                        <IconTabFilter text="{i18n>regionAfrica}" key="africa">
+                            <List
+                                items="{/oRanking/africaTopScores}"
+                                growing="true"
+                                growingThreshold="10"
+                                growingScrollToLoad="false">
+                                <StandardListItem
+                                    title="{playerName}"
+                                    counter="{score}" />
+                            </List>
+                        </IconTabFilter>
+                        <IconTabFilter text="{i18n>regionNorthAmerica}" key="northAmercia" enabled="false">
+                            <List
+                                items="{/oRanking/northAmericaTopScores}"
+                                growing="true"
+                                growingThreshold="10"
+                                growingScrollToLoad="false">
+                                <StandardListItem
+                                    title="{playerName}"
+                                    counter="{score}" />
+                            </List>
+                        </IconTabFilter>
+                        <IconTabFilter text="{i18n>regionSouthAmerica}" key="southAmercia" enabled="false">
+                            <List
+                                items="{/oRanking/southAmericaTopScores}"
+                                growing="true"
+                                growingThreshold="10"
+                                growingScrollToLoad="false">
+                                <StandardListItem
+                                    title="{playerName}"
+                                    counter="{score}" />
+                            </List>
+                        </IconTabFilter>
+                        <IconTabFilter text="{i18n>regionAustraliaOceania}" key="australiaOceania" enabled="false">
+                            <List
+                                items="{/oRanking/australiaOceaniaTopScores}"
+                                growing="true"
+                                growingThreshold="10"
+                                growingScrollToLoad="false">
+                                <StandardListItem
+                                    title="{playerName}"
+                                    counter="{score}" />
+                            </List>
+                        </IconTabFilter>
+                    </items>
+                </IconTabBar>
+            </VBox>
+        </content>
+        <buttons>
+            <Button
+                text="{i18n>buttonClose}"
+                press="handleCloseRankingDialog" />
+        </buttons>
+    </Dialog>
+</core:FragmentDefinition>

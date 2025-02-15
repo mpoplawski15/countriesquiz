@@ -1,0 +1,83 @@
+<mvc:View
+    controllerName="mpp.countries.controller.Prepare"
+    xmlns="sap.m"
+    xmlns:mvc="sap.ui.core.mvc">
+    <Page
+        title="{i18n>homePageTitle}"
+    >
+        <subHeader>
+            <Toolbar>
+                <Button icon="sap-icon://nav-back" press="handleNavBack" tooltip="{i18n>buttonBack}" />
+                <ToolbarSpacer />
+                <Title text="{i18n>preparePageTitle}" level="H3" />
+                <ToolbarSpacer />
+            </Toolbar>
+        </subHeader>
+        <content>
+            <VBox class="sapUiSmallMarginEnd">
+                <Panel headerText="{i18n>titleRegion}" expandable="false" expanded="true"
+                    class="sapUiSmallMargin">
+                    <content>
+                        <RadioButtonGroup id="idRBGRegion" columns="2" width="100%"
+                            class="sapUiMediumMarginBottom"
+                            selectedIndex="{/oPlayConfig/iSelectedRegionIndex}">
+                            <RadioButton id="idRBEurope" text="{i18n>regionEurope}" />
+                            <RadioButton id="idRBAsia" text="{i18n>regionAsia}" />
+                            <RadioButton id="idRBNorthAmerica" text="{i18n>regionNorthAmerica}"
+                                enabled="false" />
+                            <RadioButton id="idRBSouthAmerica" text="{i18n>regionSouthAmerica}"
+                                enabled="false" />
+                            <RadioButton id="idRBAfrica" text="{i18n>regionAfrica}" />
+                            <RadioButton id="idRBAustraliaOceania"
+                                text="{i18n>regionAustraliaOceania}" enabled="false" />
+                        </RadioButtonGroup>
+                    </content>
+                </Panel>
+                <Panel headerText="{i18n>titleDifficulty}" expandable="false" expanded="true"
+                    class="sapUiSmallMargin">
+                    <content>
+                        <RadioButtonGroup id="idRBGDifficulty" columns="1" width="100%"
+                            class="sapUiMediumMarginBottom"
+                            selectedIndex="{/oPlayConfig/iSelectedDifficultyIndex}">
+                            <RadioButton id="idRBEasy" text="{i18n>difficultyEasy}"
+                            />
+                            <RadioButton id="idRBMedium" text="{i18n>difficultyMedium}"
+                            />
+                            <RadioButton id="idRBHard" text="{i18n>difficultyHard}"
+                            />
+                        </RadioButtonGroup>
+                    </content>
+                </Panel>
+                <Panel headerText="{i18n>titleMode}" expandable="false" expanded="true"
+                    class="sapUiSmallMargin">
+                    <content>
+                        <CheckBox id="idCheckboxCapitals" text="{i18n>modeCapitals}"
+                            selected="{/oPlayConfig/bCapitals}" />
+                        <CheckBox id="idCheckboxFlags" text="{i18n>modeFlags}"
+                            selected="{/oPlayConfig/bFlags}" />
+                    </content>
+                </Panel>
+                <Panel headerText="{i18n>titleLength}" expandable="false" expanded="true"
+                    class="sapUiSmallMargin">
+                    <content>
+                        <RadioButtonGroup id="idRBGLength" columns="1" width="100%"
+                            class="sapUiMediumMarginBottom"
+                            selectedIndex="{/oPlayConfig/iSelectedLengthIndex}">
+                            <RadioButton id="idRBLength10" text="10" />
+                            <RadioButton id="idRBLength20" text="20" />
+                            <RadioButton id="idRBLength50" text="50" />
+                            <RadioButton id="idRBLengthMax" text="{i18n>lengthMax}" />
+                        </RadioButtonGroup>
+                    </content>
+                </Panel>
+            </VBox>
+        </content>
+        <footer>
+            <Toolbar>
+                <ToolbarSpacer />
+                <Button text="{i18n>buttonPlay}" type="Emphasized" width="150px" press="handlePlay" />
+            </Toolbar>
+        </footer>
+
+    </Page>
+</mvc:View>

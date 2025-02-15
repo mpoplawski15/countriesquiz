@@ -1,0 +1,11 @@
+<mvc:View
+    controllerName="mpp.countries.controller.App"
+    xmlns="sap.m"
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true">
+    <Page title="{i18n>homePageTitle}">
+        <content>
+            <mvc:XMLView viewName="mpp.countries.view.MainMenu" />
+        </content>
+    </Page>
+</mvc:View>
