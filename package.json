@@ -3,18 +3,19 @@
     "version": "1.0.0",
     "description": "Countries",
     "scripts": {
-        "start": "ui5 serve -o index.html",
-        "build": "ui5 build --all --clean-dest",
-        "serve-dist": "ws --compress -d dist --open"
+      "start": "node setup-db.js && node server.js",
+      "dev": "ui5 serve -o index.html",
+      "build": "ui5 build --all --clean-dest"
     },
     "devDependencies": {
-        "@ui5/cli": "^3.9.1",
-        "local-web-server": "^5.3.1",
-        "ui5-middleware-simpleproxy": "^3.2.14"
+      "@ui5/cli": "^3.9.1",
+      "local-web-server": "^5.3.1",
+      "ui5-middleware-simpleproxy": "^3.2.14"
     },
     "dependencies": {
-        "cors": "^2.8.5",
-        "express": "^4.18.2",
-        "mysql2": "^3.9.2"
+      "cors": "^2.8.5",
+      "express": "^4.18.2",
+      "mysql2": "^3.9.2",
+      "dotenv": "^16.0.3"
     }
 }
