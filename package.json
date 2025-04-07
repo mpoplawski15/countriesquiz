@@ -3,7 +3,7 @@
     "version": "1.0.0",
     "description": "Countries",
     "scripts": {
-      "start": "node setup-db.js && node server.js",
+      "start": "node server.js",
       "dev": "ui5 serve -o index.html",
       "build": "ui5 build --all --clean-dest"
     },

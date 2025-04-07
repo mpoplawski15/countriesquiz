@@ -16,7 +16,7 @@ app.use(express.static(path.join(__dirname, 'dist')));
 let pool;
 async function connectToDatabase() {
   try {
-    pool = mysql.createPool(process.env.DATABASE_URL);
+    pool = mysql.createPool(process.env.MYSQL_URL);
     console.log('Successfully connected to database');
   } catch (error) {
     console.error('Error connecting to database:', error);
