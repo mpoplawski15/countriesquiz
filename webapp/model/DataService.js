@@ -5,7 +5,7 @@ sap.ui.define([
     "use strict";
 
     return {
-        sBaseUrl: "http://localhost:3300",
+        sBaseUrl: "",
         
 
         fetchRankingData: function () {

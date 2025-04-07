@@ -26,6 +26,41 @@ connectToDatabase();
 
 app.get('/getAllScores', async (req, res) => {
   try {
+    // First check if we have a connection
+    if (!pool) {
+      console.error('Database pool not initialized');
+      return res.status(500).json({ error: 'Database connection not established' });
+    }
+    
+    console.log('Attempting to query database...');
+    
+    // Test connection first
+    try {
+      await pool.query('SELECT 1');
+      console.log('Connection test successful');
+    } catch (connError) {
+      console.error('Connection test failed:', connError);
+      return res.status(500).json({ error: 'Database connection failed', details: connError.message });
+    }
+    
+    // Check if table exists
+    try {
+      const [tables] = await pool.query(`
+        SELECT table_name FROM information_schema.tables 
+        WHERE table_schema = DATABASE() AND table_name = 'topscores'
+      `);
+      
+      if (tables.length === 0) {
+        console.error('Table topscores does not exist');
+        return res.status(500).json({ error: 'Table does not exist' });
+      }
+      console.log('Table exists, proceeding with query');
+    } catch (tableError) {
+      console.error('Error checking table:', tableError);
+      return res.status(500).json({ error: 'Failed to check table existence', details: tableError.message });
+    }
+    
+    // Continue with your original query
     const [rows] = await pool.query('select * from topscores order by score desc');
     
     const oScores = {
