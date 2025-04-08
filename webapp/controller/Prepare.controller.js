@@ -28,9 +28,9 @@ sap.ui.define([
 		},
 
 		handlePlay() {
-			let oPlayConfig = Model.getPlayConfiguration();
 			if (ValidationManager.checkModes()) {
 				let oPlayConfig = Model.getPlayConfiguration();
+				oPlayConfig.iSelectedRegionIndex = oPlayConfig.iSelectedRegionIndex + 1;
 				this.navTo("play", {
 					playConfiguration: window.encodeURIComponent(JSON.stringify(oPlayConfig))
 				}

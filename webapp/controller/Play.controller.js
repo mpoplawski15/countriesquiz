@@ -183,9 +183,9 @@ sap.ui.define([
 
         handleSaveScore() {
             DataService.saveData({
-                regionId: 1,  // 1 for Europe, 2 for Asia, 3 for Africa
+                regionId: Model.getPlayConfiguration().iSelectedRegionIndex,  // 1 for Europe, 2 for Asia, 3 for Africa
                 playerName: "Player Name",
-                score: 95
+                score: Model.getScore()
             })
             .then(result => {
                 console.log("Score saved:", result);

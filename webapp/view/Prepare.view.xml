@@ -23,11 +23,11 @@
                             selectedIndex="{/oPlayConfig/iSelectedRegionIndex}">
                             <RadioButton id="idRBEurope" text="{i18n>regionEurope}" />
                             <RadioButton id="idRBAsia" text="{i18n>regionAsia}" />
+                            <RadioButton id="idRBAfrica" text="{i18n>regionAfrica}" />
                             <RadioButton id="idRBNorthAmerica" text="{i18n>regionNorthAmerica}"
                                 enabled="false" />
                             <RadioButton id="idRBSouthAmerica" text="{i18n>regionSouthAmerica}"
                                 enabled="false" />
-                            <RadioButton id="idRBAfrica" text="{i18n>regionAfrica}" />
                             <RadioButton id="idRBAustraliaOceania"
                                 text="{i18n>regionAustraliaOceania}" enabled="false" />
                         </RadioButtonGroup>
