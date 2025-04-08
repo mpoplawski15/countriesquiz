@@ -183,9 +183,9 @@ sap.ui.define([
 
         handleSaveScore() {
             DataService.saveData({
-                name: "Player Name",
-                score: 95,
-                regionId: 1  // 1 for Europe, 2 for Asia, 3 for Africa
+                regionId: 1,  // 1 for Europe, 2 for Asia, 3 for Africa
+                playerName: "Player Name",
+                score: 95
             })
             .then(result => {
                 console.log("Score saved:", result);

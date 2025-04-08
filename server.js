@@ -86,20 +86,19 @@ app.get('/getAllScores', async (req, res) => {
   }
 });
 
-// Add this to your server.js
 app.post('/saveScore', async (req, res) => {
   try {
-    const { name, score, regionId } = req.body;
+    const { playerName, score, regionId } = req.body;
     
     // Validate the data
-    if (!name || score === undefined || regionId === undefined) {
+    if (!playerName || score === undefined || regionId === undefined) {
       return res.status(400).json({ error: 'Missing required fields' });
     }
     
     // Insert into database
     const [result] = await pool.query(
-      'INSERT INTO topscores (name, score, regionId) VALUES (?, ?, ?)',
-      [name, score, regionId]
+      'INSERT INTO topscores (playerName, score, regionId) VALUES (?, ?, ?)',
+      [playerName, score, regionId]
     );
     
     res.status(201).json({
