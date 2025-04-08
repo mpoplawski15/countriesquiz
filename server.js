@@ -86,6 +86,34 @@ app.get('/getAllScores', async (req, res) => {
   }
 });
 
+// Add this to your server.js
+app.post('/saveScore', async (req, res) => {
+  try {
+    const { name, score, regionId } = req.body;
+    
+    // Validate the data
+    if (!name || score === undefined || regionId === undefined) {
+      return res.status(400).json({ error: 'Missing required fields' });
+    }
+    
+    // Insert into database
+    const [result] = await pool.query(
+      'INSERT INTO topscores (name, score, regionId) VALUES (?, ?, ?)',
+      [name, score, regionId]
+    );
+    
+    res.status(201).json({
+      success: true,
+      id: result.insertId,
+      message: 'Score saved successfully'
+    });
+    
+  } catch (error) {
+    console.error('Error saving score:', error);
+    res.status(500).json({ error: 'Failed to save score' });
+  }
+});
+
 // Catch-all route to serve UI5 app
 app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname, 'dist', 'index.html'));

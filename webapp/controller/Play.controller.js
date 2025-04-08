@@ -72,7 +72,6 @@ sap.ui.define([
         },
 
         generateQuestion() {
-            var that = this;
             Model.fillQuestionModel();
             this.getView().getModel().refresh();
             document.addEventListener("click", () => {
@@ -180,6 +179,20 @@ sap.ui.define([
             } else {
                 this.nextQuestion()
             }
+        },
+
+        handleSaveScore() {
+            DataService.saveData({
+                name: "Player Name",
+                score: 95,
+                regionId: 1  // 1 for Europe, 2 for Asia, 3 for Africa
+            })
+            .then(result => {
+                console.log("Score saved:", result);
+            })
+            .catch(error => {
+                console.error("Error saving score:", error);
+            });
         },
 
         clearInputField() {

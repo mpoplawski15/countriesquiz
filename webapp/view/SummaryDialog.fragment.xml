@@ -32,6 +32,9 @@
                 text="{i18n>buttonGoBack}"
                 press="handleGoBackDialog"
                 type="Emphasized" />
+            <Button 
+                text="Save score" 
+                press="handleSaveScore" />
         </buttons>
     </Dialog>
 </core:FragmentDefinition>
