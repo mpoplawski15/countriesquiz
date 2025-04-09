@@ -11,6 +11,7 @@ sap.ui.define([
 
     return BaseController.extend("mpp.countries.controller.Prepare", {
         onInit() {
+            DataService.init();
             this.setViewModel();
             this.getRouter().getRoute("play").attachPatternMatched(this.onObjectMatched, this);
             this.getView().addEventDelegate({
@@ -223,13 +224,13 @@ sap.ui.define([
         getCountriesRawData(iSelectedRegionIndex) {
             var aCountriesRawData;
             switch (iSelectedRegionIndex) {
-                case 0:
+                case 1:
                     aCountriesRawData = this.getOwnerComponent().getModel("countriesEurope").getData()
                     break;
-                case 1:
+                case 2:
                     aCountriesRawData = this.getOwnerComponent().getModel("countriesAsia").getData()
                     break;
-                case 4:
+                case 3:
                     aCountriesRawData = this.getOwnerComponent().getModel("countriesAfrica").getData()
                     break;
                 default:
