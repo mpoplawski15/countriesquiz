@@ -4,7 +4,7 @@
     "description": "Countries",
     "scripts": {
       "start": "node server.js",
-      "dev": "ui5 serve -o index.html",
+      "test": "ui5 serve -o index.html",
       "build": "ui5 build --all --clean-dest"
     },
     "devDependencies": {

@@ -6,7 +6,21 @@ sap.ui.define([
 
     return {
         sBaseUrl: "",
-        
+
+        init() {
+            // Check if we're running in production by examining the URL
+            const hostname = window.location.hostname;
+
+            if (hostname === 'localhost' || hostname === '127.0.0.1') {
+                // Running locally
+                console.log('Using local URL');
+                this.sBaseUrl = "http://localhost:3300";
+            } else {
+                // Running in production (Railway)
+                console.log('Using production URL');
+                this.sBaseUrl = ""; // Empty string for same-origin requests
+            }
+        },
 
         fetchRankingData: function () {
             return new Promise((resolve, reject) => {
@@ -31,12 +45,12 @@ sap.ui.define([
                 },
                 body: JSON.stringify(data)
             })
-            .then(response => {
-                if (!response.ok) {
-                    throw new Error('Network response was not ok');
-                }
-                return response.json();
-            });
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Network response was not ok');
+                    }
+                    return response.json();
+                });
         }
     };
 });

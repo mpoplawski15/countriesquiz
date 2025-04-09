@@ -8,6 +8,7 @@ sap.ui.define([
 
     return BaseController.extend("mpp.countries.controller.MainMenu", {
         onInit() {
+            DataService.init();
             this.setViewModel();
         },
 
