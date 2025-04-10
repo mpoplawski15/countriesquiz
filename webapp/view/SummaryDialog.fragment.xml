@@ -7,7 +7,7 @@
         title="{i18n>titleSummary}"
         titleAlignment="Center"
         horizontalScrolling="false"
-        contentWidth="25%">
+        contentWidth="30%">
         <content>
             <VBox width="100%" height="100%" justifyContent="Center"
                 alignItems="Center"
@@ -32,9 +32,11 @@
                 text="{i18n>buttonGoBack}"
                 press="handleGoBackDialog"
                 type="Emphasized" />
-            <Button 
-                text="Save score" 
-                press="handleSaveScore" />
+            <Button
+                id="idButtonSaveScore"
+                text="{i18n>buttonSaveScore}"
+                press="handleOpenSaveScoreDialog"
+                type="Emphasized" />
         </buttons>
     </Dialog>
 </core:FragmentDefinition>

@@ -114,6 +114,7 @@ sap.ui.define([
                 this.getView().byId("idScoreText").setHtmlText("<h3>" + this.getText("textYourScore") + ":" + "</h3>" + "<br/>"
                     + "<h4>" + Model.getScoreAsPercentage() + "% " + this.getText("textRightAnwers") + "</h4>" + "<br/>" + "<br/>"
                     + "<h1>" + Model.getScore() + " " + this.getText("textPoints") + "</h1>" + "<br/>" + "<br/>");
+                this.byId("idButtonSaveScore").setVisible(true);
             });
         },
 
@@ -134,7 +135,7 @@ sap.ui.define([
             });
         },
 
-        handleCloseRankingDialog(){
+        handleCloseRankingDialog() {
             this.byId("idDialogRanking").close();
         },
 
@@ -149,6 +150,45 @@ sap.ui.define([
         handleGoBackDialog() {
             Model.clearCounter();
             this.navTo("prepare", {}, true);
+        },
+
+        handleOpenSaveScoreDialog() {
+            this.promiseSaveScoreDialog ??= this.loadFragment({
+                type: "XML",
+                name: "mpp.countries.view.SaveScoreDialog"
+            });
+            this.promiseSaveScoreDialog.then((oDialog) => {
+                oDialog.open();
+                this.getView().byId("idInputPlayerNick").setValue();
+            });
+        },
+
+        handleCloseSaveScoreDialog() {
+            this.byId("idDialogSaveScore").close();
+        },
+
+        handleConfirmSaveScoreDialog() {
+            var sPlayerName = this.getView().byId("idInputPlayerNick").getValue();
+
+            if (!this.checkProfanityWithAPI(sPlayerName)) {
+                DataService.saveData({
+                    regionId: Model.getPlayConfiguration().iSelectedRegionIndex,  // 1 for Europe, 2 for Asia, 3 for Africa
+                    playerName: sPlayerName,
+                    score: Model.getScore()
+                })
+                    .then(result => {
+                        console.log("Score saved:", result);
+                        MessageToast.show("Player name saved successfully!");
+                    })
+                    .catch(error => {
+                        console.error("Error saving score:", error);
+                    });
+                this.byId("idDialogSaveScore").close();
+                this.byId("idButtonSaveScore").setVisible(false);
+            } else {
+                this.getView().byId("idInputPlayerNick").setValueState("Error");
+                MessageToast.show("Cannot save player with inappropriate name");
+            }
         },
 
         handleAnswer(oEvent) {
@@ -180,20 +220,6 @@ sap.ui.define([
             } else {
                 this.nextQuestion()
             }
-        },
-
-        handleSaveScore() {
-            DataService.saveData({
-                regionId: Model.getPlayConfiguration().iSelectedRegionIndex,  // 1 for Europe, 2 for Asia, 3 for Africa
-                playerName: "Player Name",
-                score: Model.getScore()
-            })
-            .then(result => {
-                console.log("Score saved:", result);
-            })
-            .catch(error => {
-                console.error("Error saving score:", error);
-            });
         },
 
         clearInputField() {
@@ -275,6 +301,21 @@ sap.ui.define([
                     Model.setScoreMultiplier(1.4);
                     break;
             }
+        },
+
+        checkProfanityWithAPI: function (sText) {
+            var bContainsProfanity = false;
+
+            jQuery.ajax({
+                url: "https://www.purgomalum.com/service/containsprofanity",
+                data: { text: sText },
+                async: false,
+                success: function (result) {
+                    bContainsProfanity = (result === "true");
+                }
+            });
+
+            return bContainsProfanity;
         }
 
 
