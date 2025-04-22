@@ -1,0 +1,56 @@
+/* .sapMBtn {
+   height: 100px !important;
+   padding: 0.5rem 1rem !important;
+   border-radius: 4px !important;
+} */
+
+/* Double the height of standard SAP buttons
+.sapMBtn {
+   height: auto !important;
+}
+
+.sapMBtn .sapMBtnInner {
+   height: 4.5rem !important;
+   line-height: 4.5rem !important;
+}
+
+/* Ensure button content is vertically centered */
+/* .sapMBtnContent {
+   line-height: 4.5rem !important;
+} */
+
+/* Adjust icon alignment */
+/* .sapMBtnIcon {
+   line-height: 4.5rem !important;
+} */ 
+
+
+
+.customStyles .largeBoldFont{
+   display: inline-block;
+   font-weight: bold !important;
+   font-size: 40px !important;
+}
+
+.customStyles .largeFont {
+   display: inline-block;
+   font-size: 30px;
+}
+
+.customStyles .correctAnswer input { 
+   /* border: 4px solid #538856; */
+   background-color: #538856;
+
+}
+
+.customStyles .wrongAnswer input { 
+   /* border: 4px solid #a83c3c; */
+   background-color: #a83c3c;
+
+}
+
+.customStyles .blackBorder {
+   border: 1px solid #555;
+}
+
+
