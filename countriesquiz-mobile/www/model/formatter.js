@@ -1,19 +1,2 @@
-sap.ui.define([], () => {
-	"use strict";
-
-	return {
-		statusText(sStatus) {
-			const oResourceBundle = this.getOwnerComponent().getModel("i18n").getResourceBundle();
-			switch (sStatus) {
-				case "A":
-					return oResourceBundle.getText("invoiceStatusA");
-				case "B":
-					return oResourceBundle.getText("invoiceStatusB");
-				case "C":
-					return oResourceBundle.getText("invoiceStatusC");
-				default:
-					return sStatus;
-			}
-		}
-	};
-});
+sap.ui.define([],()=>{"use strict";return{statusText(e){const t=this.getOwnerComponent().getModel("i18n").getResourceBundle();switch(e){case"A":return t.getText("invoiceStatusA");case"B":return t.getText("invoiceStatusB");case"C":return t.getText("invoiceStatusC");default:return e}}}});
+//# sourceMappingURL=formatter.js.map

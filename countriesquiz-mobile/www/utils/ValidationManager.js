@@ -1,16 +1,2 @@
-sap.ui.define([
-    "mpp/countries/model/models",
-], function (Models) {
-    return {
-        init(oContent) {
-            this.oContent = oContent;
-        },
-
-        checkModes() {
-            var bValidationPositive = true;
-            if ((this.oContent.getView().byId("idCheckboxCapitals").getSelected() === false)
-                && (this.oContent.getView().byId("idCheckboxFlags").getSelected() === false)) bValidationPositive = false;
-            return bValidationPositive;
-        }
-    }
-})
+sap.ui.define(["mpp/countries/model/models"],function(e){return{init(e){this.oContent=e},checkModes(){var e=true;if(this.oContent.getView().byId("idCheckboxCapitals").getSelected()===false&&this.oContent.getView().byId("idCheckboxFlags").getSelected()===false)e=false;return e}}});
+//# sourceMappingURL=ValidationManager.js.map

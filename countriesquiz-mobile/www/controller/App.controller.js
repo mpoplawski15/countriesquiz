@@ -1,13 +1,2 @@
-sap.ui.define([
-    "sap/ui/core/mvc/Controller",
-    "mpp/countries/model/models"
-], (Controller, Model) => {
-    "use strict";
-
-    return Controller.extend("mpp.countries.controller.App", {
-        onInit() {
-            this.getView().addStyleClass(this.getOwnerComponent().getContentDensityClass());
-            Model.init(this);
-        }
-    });
-});
+sap.ui.define(["sap/ui/core/mvc/Controller","mpp/countries/model/models"],(e,t)=>{"use strict";return e.extend("mpp.countries.controller.App",{onInit(){this.getView().addStyleClass(this.getOwnerComponent().getContentDensityClass());t.init(this)}})});
+//# sourceMappingURL=App.controller.js.map

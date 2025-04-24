@@ -1,0 +1,10 @@
+<mvc:View
+   controllerName="mpp.countries.controller.App"
+   xmlns="sap.m"
+   xmlns:mvc="sap.ui.core.mvc"
+   displayBlock="true">
+   <Shell>
+      <App id="app" class="customStyles">
+      </App>
+   </Shell>
+</mvc:View>
