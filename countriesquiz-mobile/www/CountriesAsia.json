@@ -9,7 +9,7 @@
             "country": "Afganistan",
             "capital": "Kabul"
         },
-        "flag": "https://flagpedia.net/data/flags/h80/af.png"
+        "flag": "images/flags/af.png"
     },
     {
         "id": 2,
@@ -21,7 +21,7 @@
             "country": "Armenia",
             "capital": "Erywań"
         },
-        "flag": "https://flagpedia.net/data/flags/h80/am.png"
+        "flag": "images/flags/am.png"
     },
     {
         "id": 3,
@@ -33,7 +33,7 @@
             "country": "Azerbejdżan",
             "capital": "Baku"
         },
-        "flag": "https://flagpedia.net/data/flags/h80/az.png"
+        "flag": "images/flags/az.png"
     },
     {
         "id": 4,
@@ -45,7 +45,7 @@
             "country": "Bahrajn",
             "capital": "Manama"
         },
-        "flag": "https://flagpedia.net/data/flags/h80/bh.png"
+        "flag": "images/flags/bh.png"
     },
     {
         "id": 5,
@@ -57,7 +57,7 @@
             "country": "Bangladesz",
             "capital": "Dhaka"
         },
-        "flag": "https://flagpedia.net/data/flags/h80/bd.png"
+        "flag": "images/flags/bd.png"
     },
     {
         "id": 6,
@@ -69,7 +69,7 @@
             "country": "Bhutan",
             "capital": "Thimphu"
         },
-        "flag": "https://flagpedia.net/data/flags/h80/bt.png"
+        "flag": "images/flags/bt.png"
     },
     {
         "id": 7,
@@ -81,7 +81,7 @@
             "country": "Brunei",
             "capital": "Bandar Seri Begawan"
         },
-        "flag": "https://flagpedia.net/data/flags/h80/bn.png"
+        "flag": "images/flags/bn.png"
     },
     {
         "id": 8,
@@ -93,7 +93,7 @@
             "country": "Kambodża",
             "capital": "Phnom Penh"
         },
-        "flag": "https://flagpedia.net/data/flags/h80/kh.png"
+        "flag": "images/flags/kh.png"
     },
     {
         "id": 9,
@@ -105,7 +105,7 @@
             "country": "Cypr",
             "capital": "Nikozja"
         },
-        "flag": "https://flagpedia.net/data/flags/h80/cy.png"
+        "flag": "images/flags/cy.png"
     },
     {
         "id": 10,
@@ -117,7 +117,7 @@
             "country": "Gruzja",
             "capital": "Tbilisi"
         },
-        "flag": "https://flagpedia.net/data/flags/h80/ge.png"
+        "flag": "images/flags/ge.png"
     },
     {
         "id": 11,
@@ -129,7 +129,7 @@
             "country": "Indie",
             "capital": "Nowe Delhi"
         },
-        "flag": "https://flagpedia.net/data/flags/h80/in.png"
+        "flag": "images/flags/in.png"
     },
     {
         "id": 12,
@@ -141,7 +141,7 @@
             "country": "Indonezja",
             "capital": "Dżakarta"
         },
-        "flag": "https://flagpedia.net/data/flags/h80/id.png"
+        "flag": "images/flags/id.png"
     },
     {
         "id": 13,
@@ -153,7 +153,7 @@
             "country": "Iran",
             "capital": "Teheran"
         },
-        "flag": "https://flagpedia.net/data/flags/h80/ir.png"
+        "flag": "images/flags/ir.png"
     },
     {
         "id": 14,
@@ -165,7 +165,7 @@
             "country": "Irak",
             "capital": "Bagdad"
         },
-        "flag": "https://flagpedia.net/data/flags/h80/iq.png"
+        "flag": "images/flags/iq.png"
     },
     {
         "id": 15,
@@ -177,7 +177,7 @@
             "country": "Izrael",
             "capital": "Jerozolima"
         },
-        "flag": "https://flagpedia.net/data/flags/h80/il.png"
+        "flag": "images/flags/il.png"
     },
     {
         "id": 16,
@@ -189,7 +189,7 @@
             "country": "Japonia",
             "capital": "Tokio"
         },
-        "flag": "https://flagpedia.net/data/flags/h80/jp.png"
+        "flag": "images/flags/jp.png"
     },
     {
         "id": 17,
@@ -201,7 +201,7 @@
             "country": "Jordania",
             "capital": "Amman"
         },
-        "flag": "https://flagpedia.net/data/flags/h80/jo.png"
+        "flag": "images/flags/jo.png"
     },
     {
         "id": 18,
@@ -213,7 +213,7 @@
             "country": "Kazachstan",
             "capital": "Astana"
         },
-        "flag": "https://flagpedia.net/data/flags/h80/kz.png"
+        "flag": "images/flags/kz.png"
     },
     {
         "id": 19,
@@ -225,7 +225,7 @@
             "country": "Kuwejt",
             "capital": "Kuwejt"
         },
-        "flag": "https://flagpedia.net/data/flags/h80/kw.png"
+        "flag": "images/flags/kw.png"
     },
     {
         "id": 20,
@@ -237,7 +237,7 @@
             "country": "Kirgistan",
             "capital": "Biszkek"
         },
-        "flag": "https://flagpedia.net/data/flags/h80/kg.png"
+        "flag": "images/flags/kg.png"
     },
     {
         "id": 21,
@@ -249,7 +249,7 @@
             "country": "Laos",
             "capital": "Wientian"
         },
-        "flag": "https://flagpedia.net/data/flags/h80/la.png"
+        "flag": "images/flags/la.png"
     },
     {
         "id": 22,
@@ -261,7 +261,7 @@
             "country": "Liban",
             "capital": "Bejrut"
         },
-        "flag": "https://flagpedia.net/data/flags/h80/lb.png"
+        "flag": "images/flags/lb.png"
     },
     {
         "id": 23,
@@ -273,7 +273,7 @@
             "country": "Malezja",
             "capital": "Kuala Lumpur"
         },
-        "flag": "https://flagpedia.net/data/flags/h80/my.png"
+        "flag": "images/flags/my.png"
     },
     {
         "id": 24,
@@ -285,7 +285,7 @@
             "country": "Malediwy",
             "capital": "Malé"
         },
-        "flag": "https://flagpedia.net/data/flags/h80/mv.png"
+        "flag": "images/flags/mv.png"
     },
     {
         "id": 25,
@@ -297,7 +297,7 @@
             "country": "Mongolia",
             "capital": "Ułan Bator"
         },
-        "flag": "https://flagpedia.net/data/flags/h80/mn.png"
+        "flag": "images/flags/mn.png"
     },
     {
         "id": 26,
@@ -309,7 +309,7 @@
             "country": "Mjanma",
             "capital": "Naypyidaw"
         },
-        "flag": "https://flagpedia.net/data/flags/h80/mm.png"
+        "flag": "images/flags/mm.png"
     },
     {
         "id": 27,
@@ -321,7 +321,7 @@
             "country": "Nepal",
             "capital": "Katmandu"
         },
-        "flag": "https://flagpedia.net/data/flags/h80/np.png"
+        "flag": "images/flags/np.png"
     },
     {
         "id": 28,
@@ -333,7 +333,7 @@
             "country": "Korea Północna",
             "capital": "Pjongjang"
         },
-        "flag": "https://flagpedia.net/data/flags/h80/kp.png"
+        "flag": "images/flags/kp.png"
     },
     {
         "id": 29,
@@ -345,7 +345,7 @@
             "country": "Oman",
             "capital": "Maskat"
         },
-        "flag": "https://flagpedia.net/data/flags/h80/om.png"
+        "flag": "images/flags/om.png"
     },
     {
         "id": 30,
@@ -357,7 +357,7 @@
             "country": "Pakistan",
             "capital": "Islamabad"
         },
-        "flag": "https://flagpedia.net/data/flags/h80/pk.png"
+        "flag": "images/flags/pk.png"
     },
     {
         "id": 31,
@@ -369,7 +369,7 @@
             "country": "Filipiny",
             "capital": "Manila"
         },
-        "flag": "https://flagpedia.net/data/flags/h80/ph.png"
+        "flag": "images/flags/ph.png"
     },
     {
         "id": 32,
@@ -381,7 +381,7 @@
             "country": "Katar",
             "capital": "Doha"
         },
-        "flag": "https://flagpedia.net/data/flags/h80/qa.png"
+        "flag": "images/flags/qa.png"
     },
     {
         "id": 33,
@@ -393,7 +393,7 @@
             "country": "Arabia Saudyjska",
             "capital": "Rijad"
         },
-        "flag": "https://flagpedia.net/data/flags/h80/sa.png"
+        "flag": "images/flags/sa.png"
     },
     {
         "id": 34,
@@ -405,7 +405,7 @@
             "country": "Singapur",
             "capital": "Singapur"
         },
-        "flag": "https://flagpedia.net/data/flags/h80/sg.png"
+        "flag": "images/flags/sg.png"
     },
     {
         "id": 35,
@@ -417,7 +417,7 @@
             "country": "Korea Południowa",
             "capital": "Seul"
         },
-        "flag": "https://flagpedia.net/data/flags/h80/kr.png"
+        "flag": "images/flags/kr.png"
     },
     {
         "id": 36,
@@ -429,7 +429,7 @@
             "country": "Sri Lanka",
             "capital": "Kolombo"
         },
-        "flag": "https://flagpedia.net/data/flags/h80/lk.png"
+        "flag": "images/flags/lk.png"
     },
     {
         "id": 37,
@@ -441,7 +441,7 @@
             "country": "Syria",
             "capital": "Damaszek"
         },
-        "flag": "https://flagpedia.net/data/flags/h80/sy.png"
+        "flag": "images/flags/sy.png"
     },
     {
         "id": 38,
@@ -453,7 +453,7 @@
             "country": "Tajwan",
             "capital": "Tajpej"
         },
-        "flag": "https://flagpedia.net/data/flags/h80/tw.png"
+        "flag": "images/flags/tw.png"
     },
     {
         "id": 39,
@@ -465,7 +465,7 @@
             "country": "Tadżykistan",
             "capital": "Duszanbe"
         },
-        "flag": "https://flagpedia.net/data/flags/h80/tj.png"
+        "flag": "images/flags/tj.png"
     },
     {
         "id": 40,
@@ -477,7 +477,7 @@
             "country": "Tajlandia",
             "capital": "Bangkok"
         },
-        "flag": "https://flagpedia.net/data/flags/h80/th.png"
+        "flag": "images/flags/th.png"
     },
     {
         "id": 41,
@@ -489,7 +489,7 @@
             "country": "Timor Wschodni",
             "capital": "Dili"
         },
-        "flag": "https://flagpedia.net/data/flags/h80/tl.png"
+        "flag": "images/flags/tl.png"
     },
     {
         "id": 42,
@@ -501,7 +501,7 @@
             "country": "Turcja",
             "capital": "Ankara"
         },
-        "flag": "https://flagpedia.net/data/flags/h80/tr.png"
+        "flag": "images/flags/tr.png"
     },
     {
         "id": 43,
@@ -513,7 +513,7 @@
             "country": "Turkmenistan",
             "capital": "Aszchabad"
         },
-        "flag": "https://flagpedia.net/data/flags/h80/tm.png"
+        "flag": "images/flags/tm.png"
     },
     {
         "id": 44,
@@ -525,7 +525,7 @@
             "country": "Zjednoczone Emiraty Arabskie",
             "capital": "Abu Dhabi"
         },
-        "flag": "https://flagpedia.net/data/flags/h80/ae.png"
+        "flag": "images/flags/ae.png"
     },
     {
         "id": 45,
@@ -537,7 +537,7 @@
             "country": "Uzbekistan",
             "capital": "Taszkent"
         },
-        "flag": "https://flagpedia.net/data/flags/h80/uz.png"
+        "flag": "images/flags/uz.png"
     },
     {
         "id": 46,
@@ -549,7 +549,7 @@
             "country": "Wietnam",
             "capital": "Hanoi"
         },
-        "flag": "https://flagpedia.net/data/flags/h80/vn.png"
+        "flag": "images/flags/vn.png"
     },
     {
         "id": 47,
@@ -561,6 +561,6 @@
             "country": "Jemen",
             "capital": "Sanaa"
         },
-        "flag": "https://flagpedia.net/data/flags/h80/ye.png"
+        "flag": "images/flags/ye.png"
     }
 ]

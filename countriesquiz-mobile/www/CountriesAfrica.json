@@ -9,7 +9,7 @@
             "country": "Algieria",
             "capital": "Algier"
         },
-        "flag": "https://flagpedia.net/data/flags/h80/dz.png"
+        "flag": "images/flags/dz.png"
     },
     {
         "id": 2,
@@ -21,7 +21,7 @@
             "country": "Angola",
             "capital": "Luanda"
         },
-        "flag": "https://flagpedia.net/data/flags/h80/ao.png"
+        "flag": "images/flags/ao.png"
     },
     {
         "id": 3,
@@ -33,7 +33,7 @@
             "country": "Benin",
             "capital": "Porto-Novo"
         },
-        "flag": "https://flagpedia.net/data/flags/h80/bj.png"
+        "flag": "images/flags/bj.png"
     },
     {
         "id": 4,
@@ -45,7 +45,7 @@
             "country": "Botswana",
             "capital": "Gaborone"
         },
-        "flag": "https://flagpedia.net/data/flags/h80/bw.png"
+        "flag": "images/flags/bw.png"
     },
     {
         "id": 5,
@@ -57,7 +57,7 @@
             "country": "Burkina Faso",
             "capital": "Ouagadougou"
         },
-        "flag": "https://flagpedia.net/data/flags/h80/bf.png"
+        "flag": "images/flags/bf.png"
     },
     {
         "id": 6,
@@ -69,7 +69,7 @@
             "country": "Burundi",
             "capital": "Bużumbura"
         },
-        "flag": "https://flagpedia.net/data/flags/h80/bi.png"
+        "flag": "images/flags/bi.png"
     },
     {
         "id": 7,
@@ -81,7 +81,7 @@
             "country": "Republika Zielonego Przylądka",
             "capital": "Praia"
         },
-        "flag": "https://flagpedia.net/data/flags/h80/cv.png"
+        "flag": "images/flags/cv.png"
     },
     {
         "id": 8,
@@ -93,7 +93,7 @@
             "country": "Kamerun",
             "capital": "Jaunde"
         },
-        "flag": "https://flagpedia.net/data/flags/h80/cm.png"
+        "flag": "images/flags/cm.png"
     },
     {
         "id": 9,
@@ -105,7 +105,7 @@
             "country": "Republika Środkowoafrykańska",
             "capital": "Bangi"
         },
-        "flag": "https://flagpedia.net/data/flags/h80/cf.png"
+        "flag": "images/flags/cf.png"
     },
     {
         "id": 10,
@@ -117,7 +117,7 @@
             "country": "Czad",
             "capital": "N'Dżamena"
         },
-        "flag": "https://flagpedia.net/data/flags/h80/td.png"
+        "flag": "images/flags/td.png"
     },
     {
         "id": 11,
@@ -129,7 +129,7 @@
             "country": "Komory",
             "capital": "Moroni"
         },
-        "flag": "https://flagpedia.net/data/flags/h80/km.png"
+        "flag": "images/flags/km.png"
     },
     {
         "id": 12,
@@ -141,7 +141,7 @@
             "country": "Demokratyczna Republika Konga",
             "capital": "Kinszasa"
         },
-        "flag": "https://flagpedia.net/data/flags/h80/cd.png"
+        "flag": "images/flags/cd.png"
     },
     {
         "id": 13,
@@ -153,7 +153,7 @@
             "country": "Dżibuti",
             "capital": "Dżibuti"
         },
-        "flag": "https://flagpedia.net/data/flags/h80/dj.png"
+        "flag": "images/flags/dj.png"
     },
     {
         "id": 14,
@@ -165,7 +165,7 @@
             "country": "Egipt",
             "capital": "Kair"
         },
-        "flag": "https://flagpedia.net/data/flags/h80/eg.png"
+        "flag": "images/flags/eg.png"
     },
     {
         "id": 15,
@@ -177,7 +177,7 @@
             "country": "Gwinea Równikowa",
             "capital": "Malabo"
         },
-        "flag": "https://flagpedia.net/data/flags/h80/gq.png"
+        "flag": "images/flags/gq.png"
     },
     {
         "id": 16,
@@ -189,7 +189,7 @@
             "country": "Erytrea",
             "capital": "Asmara"
         },
-        "flag": "https://flagpedia.net/data/flags/h80/er.png"
+        "flag": "images/flags/er.png"
     },
     {
         "id": 17,
@@ -201,7 +201,7 @@
             "country": "Eswatini",
             "capital": "Mbabane"
         },
-        "flag": "https://flagpedia.net/data/flags/h80/sz.png"
+        "flag": "images/flags/sz.png"
     },
     {
         "id": 18,
@@ -213,7 +213,7 @@
             "country": "Etiopia",
             "capital": "Addis Abeba"
         },
-        "flag": "https://flagpedia.net/data/flags/h80/et.png"
+        "flag": "images/flags/et.png"
     },
     {
         "id": 19,
@@ -225,7 +225,7 @@
             "country": "Gabon",
             "capital": "Libreville"
         },
-        "flag": "https://flagpedia.net/data/flags/h80/ga.png"
+        "flag": "images/flags/ga.png"
     },
     {
         "id": 20,
@@ -237,7 +237,7 @@
             "country": "Gambia",
             "capital": "Bandżul"
         },
-        "flag": "https://flagpedia.net/data/flags/h80/gm.png"
+        "flag": "images/flags/gm.png"
     },
     {
         "id": 21,
@@ -249,7 +249,7 @@
             "country": "Ghana",
             "capital": "Akra"
         },
-        "flag": "https://flagpedia.net/data/flags/h80/gh.png"
+        "flag": "images/flags/gh.png"
     },
     {
         "id": 22,
@@ -261,7 +261,7 @@
             "country": "Gwinea",
             "capital": "Konakry"
         },
-        "flag": "https://flagpedia.net/data/flags/h80/gn.png"
+        "flag": "images/flags/gn.png"
     },
     {
         "id": 23,
@@ -273,7 +273,7 @@
             "country": "Gwinea Bissau",
             "capital": "Bissau"
         },
-        "flag": "https://flagpedia.net/data/flags/h80/gw.png"
+        "flag": "images/flags/gw.png"
     },
     {
         "id": 24,
@@ -285,7 +285,7 @@
             "country": "Wybrzeże Kości Słoniowej",
             "capital": "Jamusukro"
         },
-        "flag": "https://flagpedia.net/data/flags/h80/ci.png"
+        "flag": "images/flags/ci.png"
     },
     {
         "id": 25,
@@ -297,7 +297,7 @@
             "country": "Kenia",
             "capital": "Nairobi"
         },
-        "flag": "https://flagpedia.net/data/flags/h80/ke.png"
+        "flag": "images/flags/ke.png"
     },
     {
         "id": 26,
@@ -309,7 +309,7 @@
             "country": "Lesotho",
             "capital": "Maseru"
         },
-        "flag": "https://flagpedia.net/data/flags/h80/ls.png"
+        "flag": "images/flags/ls.png"
     },
     {
         "id": 27,
@@ -321,7 +321,7 @@
             "country": "Liberia",
             "capital": "Monrovia"
         },
-        "flag": "https://flagpedia.net/data/flags/h80/lr.png"
+        "flag": "images/flags/lr.png"
     },
     {
         "id": 28,
@@ -333,7 +333,7 @@
             "country": "Libia",
             "capital": "Trypolis"
         },
-        "flag": "https://flagpedia.net/data/flags/h80/ly.png"
+        "flag": "images/flags/ly.png"
     },
     {
         "id": 29,
@@ -345,7 +345,7 @@
             "country": "Madagaskar",
             "capital": "Antananarywa"
         },
-        "flag": "https://flagpedia.net/data/flags/h80/mg.png"
+        "flag": "images/flags/mg.png"
     },
     {
         "id": 30,
@@ -357,7 +357,7 @@
             "country": "Malawi",
             "capital": "Lilongwe"
         },
-        "flag": "https://flagpedia.net/data/flags/h80/mw.png"
+        "flag": "images/flags/mw.png"
     },
     {
         "id": 31,
@@ -369,7 +369,7 @@
             "country": "Mali",
             "capital": "Bamako"
         },
-        "flag": "https://flagpedia.net/data/flags/h80/ml.png"
+        "flag": "images/flags/ml.png"
     },
     {
         "id": 32,
@@ -381,7 +381,7 @@
             "country": "Mauretania",
             "capital": "Nawakszut"
         },
-        "flag": "https://flagpedia.net/data/flags/h80/mr.png"
+        "flag": "images/flags/mr.png"
     },
     {
         "id": 33,
@@ -393,7 +393,7 @@
             "country": "Mauritius",
             "capital": "Port Louis"
         },
-        "flag": "https://flagpedia.net/data/flags/h80/mu.png"
+        "flag": "images/flags/mu.png"
     },
     {
         "id": 34,
@@ -405,7 +405,7 @@
             "country": "Maroko",
             "capital": "Rabat"
         },
-        "flag": "https://flagpedia.net/data/flags/h80/ma.png"
+        "flag": "images/flags/ma.png"
     },
     {
         "id": 35,
@@ -417,7 +417,7 @@
             "country": "Mozambik",
             "capital": "Maputo"
         },
-        "flag": "https://flagpedia.net/data/flags/h80/mz.png"
+        "flag": "images/flags/mz.png"
     },
     {
         "id": 36,
@@ -429,7 +429,7 @@
             "country": "Namibia",
             "capital": "Windhuk"
         },
-        "flag": "https://flagpedia.net/data/flags/h80/na.png"
+        "flag": "images/flags/na.png"
     },
     {
         "id": 37,
@@ -441,7 +441,7 @@
             "country": "Niger",
             "capital": "Niamey"
         },
-        "flag": "https://flagpedia.net/data/flags/h80/ne.png"
+        "flag": "images/flags/ne.png"
     },
     {
         "id": 38,
@@ -453,7 +453,7 @@
             "country": "Nigeria",
             "capital": "Abudża"
         },
-        "flag": "https://flagpedia.net/data/flags/h80/ng.png"
+        "flag": "images/flags/ng.png"
     },
     {
         "id": 39,
@@ -465,7 +465,7 @@
             "country": "Rwanda",
             "capital": "Kigali"
         },
-        "flag": "https://flagpedia.net/data/flags/h80/rw.png"
+        "flag": "images/flags/rw.png"
     },
     {
         "id": 40,
@@ -477,7 +477,7 @@
             "country": "São Tomé i Príncipe",
             "capital": "São Tomé"
         },
-        "flag": "https://flagpedia.net/data/flags/h80/st.png"
+        "flag": "images/flags/st.png"
     },
     {
         "id": 41,
@@ -489,7 +489,7 @@
             "country": "Senegal",
             "capital": "Dakar"
         },
-        "flag": "https://flagpedia.net/data/flags/h80/sn.png"
+        "flag": "images/flags/sn.png"
     },
     {
         "id": 42,
@@ -501,7 +501,7 @@
             "country": "Seszele",
             "capital": "Victoria"
         },
-        "flag": "https://flagpedia.net/data/flags/h80/sc.png"
+        "flag": "images/flags/sc.png"
     },
     {
         "id": 43,
@@ -513,7 +513,7 @@
             "country": "Sierra Leone",
             "capital": "Freetown"
         },
-        "flag": "https://flagpedia.net/data/flags/h80/sl.png"
+        "flag": "images/flags/sl.png"
     },
     {
         "id": 44,
@@ -525,7 +525,7 @@
             "country": "Somalia",
             "capital": "Mogadiszu"
         },
-        "flag": "https://flagpedia.net/data/flags/h80/so.png"
+        "flag": "images/flags/so.png"
     },
     {
         "id": 45,
@@ -537,7 +537,7 @@
             "country": "Republika Południowej Afryki",
             "capital": "Pretoria"
         },
-        "flag": "https://flagpedia.net/data/flags/h80/za.png"
+        "flag": "images/flags/za.png"
     },
     {
         "id": 46,
@@ -549,7 +549,7 @@
             "country": "Południowy Sudan",
             "capital": "Dżuba"
         },
-        "flag": "https://flagpedia.net/data/flags/h80/ss.png"
+        "flag": "images/flags/ss.png"
     },
     {
         "id": 47,
@@ -561,7 +561,7 @@
             "country": "Sudan",
             "capital": "Chartum"
         },
-        "flag": "https://flagpedia.net/data/flags/h80/sd.png"
+        "flag": "images/flags/sd.png"
     },
     {
         "id": 48,
@@ -573,7 +573,7 @@
             "country": "Tanzania",
             "capital": "Dodoma"
         },
-        "flag": "https://flagpedia.net/data/flags/h80/tz.png"
+        "flag": "images/flags/tz.png"
     },
     {
         "id": 49,
@@ -585,7 +585,7 @@
             "country": "Togo",
             "capital": "Lome"
         },
-        "flag": "https://flagpedia.net/data/flags/h80/tg.png"
+        "flag": "images/flags/tg.png"
     },
     {
         "id": 50,
@@ -597,7 +597,7 @@
             "country": "Tunezja",
             "capital": "Tunis"
         },
-        "flag": "https://flagpedia.net/data/flags/h80/tn.png"
+        "flag": "images/flags/tn.png"
     },
     {
         "id": 51,
@@ -609,7 +609,7 @@
             "country": "Uganda",
             "capital": "Kampala"
         },
-        "flag": "https://flagpedia.net/data/flags/h80/ug.png"
+        "flag": "images/flags/ug.png"
     },
     {
         "id": 52,
@@ -621,7 +621,7 @@
             "country": "Zambia",
             "capital": "Lusaka"
         },
-        "flag": "https://flagpedia.net/data/flags/h80/zm.png"
+        "flag": "images/flags/zm.png"
     },
     {
         "id": 53,
@@ -633,6 +633,6 @@
             "country": "Zimbabwe",
             "capital": "Harare"
         },
-        "flag": "https://flagpedia.net/data/flags/h80/zw.png"
+        "flag": "images/flags/zw.png"
     }
 ]

@@ -12,4 +12,10 @@
     <allow-navigation href="*" />
     <allow-intent href="file://*/*" />
     <allow-navigation href="file://*/*" />
+    <platform name="android">
+    <resource-file src="www/images/flags" target="app/src/main/assets/www/images/flags" />
+    </platform>
+    <platform name="ios">
+    <resource-file src="www/images/flags" target="images/flags" />
+    </platform>
 </widget>

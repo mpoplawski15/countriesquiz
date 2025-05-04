@@ -9,7 +9,7 @@
             "country": "Albania",
             "capital": "Tirana"
         },
-        "flag": "https://flagpedia.net/data/flags/h80/al.png"
+        "flag": "images/flags/al.png"
     },
     {
         "id": 2,
@@ -21,7 +21,7 @@
             "country": "Andora",
             "capital": "Andora"
         },
-        "flag": "https://flagpedia.net/data/flags/h80/ad.png"
+        "flag": "images/flags/ad.png"
     },
     {
         "id": 3,
@@ -33,7 +33,7 @@
             "country": "Austria",
             "capital": "Wiedeń"
         },
-        "flag": "https://flagpedia.net/data/flags/h80/at.png"
+        "flag": "images/flags/at.png"
     },
     {
         "id": 4,
@@ -45,7 +45,7 @@
             "country": "Białoruś",
             "capital": "Mińsk"
         },
-        "flag": "https://flagpedia.net/data/flags/h80/by.png"
+        "flag": "images/flags/by.png"
     },
     {
         "id": 5,
@@ -57,7 +57,7 @@
             "country": "Belgia",
             "capital": "Bruksela"
         },
-        "flag": "https://flagpedia.net/data/flags/h80/be.png"
+        "flag": "images/flags/be.png"
     },
     {
         "id": 6,
@@ -69,7 +69,7 @@
             "country": "Bośnia i Harcegowina",
             "capital": "Sarajewo"
         },
-        "flag": "https://flagpedia.net/data/flags/h80/ba.png"
+        "flag": "images/flags/ba.png"
     },
     {
         "id": 7,
@@ -81,7 +81,7 @@
             "country": "Bułgaria",
             "capital": "Sofia"
         },
-        "flag": "https://flagpedia.net/data/flags/h80/bg.png"
+        "flag": "images/flags/bg.png"
     },
     {
         "id": 8,
@@ -93,7 +93,7 @@
             "country": "Chorwacja",
             "capital": "Zagrzeb"
         },
-        "flag": "https://flagpedia.net/data/flags/h80/hr.png"
+        "flag": "images/flags/hr.png"
     },
     {
         "id": 9,
@@ -105,7 +105,7 @@
             "country": "Cypr",
             "capital": "Nikozja"
         },
-        "flag": "https://flagpedia.net/data/flags/h80/cy.png"
+        "flag": "images/flags/cy.png"
     },
     {
         "id": 10,
@@ -117,7 +117,7 @@
             "country": "Czechy",
             "capital": "Praga"
         },
-        "flag": "https://flagpedia.net/data/flags/h80/cz.png"
+        "flag": "images/flags/cz.png"
     },
     {
         "id": 11,
@@ -129,7 +129,7 @@
             "country": "Dania",
             "capital": "Kopenhaga"
         },
-        "flag": "https://flagpedia.net/data/flags/h80/dk.png"
+        "flag": "images/flags/dk.png"
     },
     {
         "id": 12,
@@ -141,7 +141,7 @@
             "country": "Estonia",
             "capital": "Tallinn"
         },
-        "flag": "https://flagpedia.net/data/flags/h80/ee.png"
+        "flag": "images/flags/ee.png"
     },
     {
         "id": 13,
@@ -153,7 +153,7 @@
             "country": "Finlandia",
             "capital": "Helsinki"
         },
-        "flag": "https://flagpedia.net/data/flags/h80/fi.png"
+        "flag": "images/flags/fi.png"
     },
     {
         "id": 14,
@@ -165,7 +165,7 @@
             "country": "Francja",
             "capital": "Paryż"
         },
-        "flag": "https://flagpedia.net/data/flags/h80/fr.png"
+        "flag": "images/flags/fr.png"
     },
     {
         "id": 15,
@@ -177,7 +177,7 @@
             "country": "Niemcy",
             "capital": "Berlin"
         },
-        "flag": "https://flagpedia.net/data/flags/h80/de.png"
+        "flag": "images/flags/de.png"
     },
     {
         "id": 16,
@@ -189,7 +189,7 @@
             "country": "Grecja",
             "capital": "Ateny"
         },
-        "flag": "https://flagpedia.net/data/flags/h80/gr.png"
+        "flag": "images/flags/gr.png"
     },
     {
         "id": 17,
@@ -201,7 +201,7 @@
             "country": "Węgry",
             "capital": "Budapeszt"
         },
-        "flag": "https://flagpedia.net/data/flags/h80/hu.png"
+        "flag": "images/flags/hu.png"
     },
     {
         "id": 18,
@@ -213,7 +213,7 @@
             "country": "Islandia",
             "capital": "Reykjavik"
         },
-        "flag": "https://flagpedia.net/data/flags/h80/is.png"
+        "flag": "images/flags/is.png"
     },
     {
         "id": 19,
@@ -225,7 +225,7 @@
             "country": "Irlandia",
             "capital": "Dublin"
         },
-        "flag": "https://flagpedia.net/data/flags/h80/ie.png"
+        "flag": "images/flags/ie.png"
     },
     {
         "id": 20,
@@ -237,7 +237,7 @@
             "country": "Włochy",
             "capital": "Rzym"
         },
-        "flag": "https://flagpedia.net/data/flags/h80/it.png"
+        "flag": "images/flags/it.png"
     },
     {
         "id": 21,
@@ -249,7 +249,7 @@
             "country": "Kosowo",
             "capital": "Prisztina"
         },
-        "flag": "https://flagpedia.net/data/flags/h80/xk.png"
+        "flag": "images/flags/xk.png"
     },
     {
         "id": 22,
@@ -261,7 +261,7 @@
             "country": "Łotwa",
             "capital": "Ryga"
         },
-        "flag": "https://flagpedia.net/data/flags/h80/lv.png"
+        "flag": "images/flags/lv.png"
     },
     {
         "id": 23,
@@ -273,7 +273,7 @@
             "country": "Liechtenstein",
             "capital": "Vaduz"
         },
-        "flag": "https://flagpedia.net/data/flags/h80/li.png"
+        "flag": "images/flags/li.png"
     },
     {
         "id": 24,
@@ -285,7 +285,7 @@
             "country": "Litwa",
             "capital": "Wilno"
         },
-        "flag": "https://flagpedia.net/data/flags/h80/lt.png"
+        "flag": "images/flags/lt.png"
     },
     {
         "id": 25,
@@ -297,7 +297,7 @@
             "country": "Luksemburg",
             "capital": "Luksemburg"
         },
-        "flag": "https://flagpedia.net/data/flags/h80/lu.png"
+        "flag": "images/flags/lu.png"
     },
     {
         "id": 26,
@@ -309,7 +309,7 @@
             "country": "Malta",
             "capital": "Valletta"
         },
-        "flag": "https://flagpedia.net/data/flags/h80/mt.png"
+        "flag": "images/flags/mt.png"
     },
     {
         "id": 27,
@@ -321,7 +321,7 @@
             "country": "Mołdawia",
             "capital": "Kiszyniów"
         },
-        "flag": "https://flagpedia.net/data/flags/h80/md.png"
+        "flag": "images/flags/md.png"
     },
     {
         "id": 28,
@@ -333,7 +333,7 @@
             "country": "Monako",
             "capital": "Monako"
         },
-        "flag": "https://flagpedia.net/data/flags/h80/mc.png"
+        "flag": "images/flags/mc.png"
     },
     {
         "id": 29,
@@ -345,7 +345,7 @@
             "country": "Czarnogóra",
             "capital": "Podgorica"
         },
-        "flag": "https://flagpedia.net/data/flags/h80/me.png"
+        "flag": "images/flags/me.png"
     },
     {
         "id": 30,
@@ -357,7 +357,7 @@
             "country": "Holandia",
             "capital": "Amsterdam"
         },
-        "flag": "https://flagpedia.net/data/flags/h80/nl.png"
+        "flag": "images/flags/nl.png"
     },
     {
         "id": 31,
@@ -369,7 +369,7 @@
             "country": "Macedonia Północna",
             "capital": "Skopje"
         },
-        "flag": "https://flagpedia.net/data/flags/h80/mk.png"
+        "flag": "images/flags/mk.png"
     },
     {
         "id": 32,
@@ -381,7 +381,7 @@
             "country": "Norwegia",
             "capital": "Oslo"
         },
-        "flag": "https://flagpedia.net/data/flags/h80/no.png"
+        "flag": "images/flags/no.png"
     },
     {
         "id": 33,
@@ -393,7 +393,7 @@
             "country": "Polska",
             "capital": "Warszawa"
         },
-        "flag": "https://flagpedia.net/data/flags/h80/pl.png"
+        "flag": "images/flags/pl.png"
     },
     {
         "id": 34,
@@ -405,7 +405,7 @@
             "country": "Portugalia",
             "capital": "Lizbona"
         },
-        "flag": "https://flagpedia.net/data/flags/h80/pt.png"
+        "flag": "images/flags/pt.png"
     },
     {
         "id": 35,
@@ -417,7 +417,7 @@
             "country": "Rumunia",
             "capital": "Bukareszt"
         },
-        "flag": "https://flagpedia.net/data/flags/h80/ro.png"
+        "flag": "images/flags/ro.png"
     },
     {
         "id": 36,
@@ -429,7 +429,7 @@
             "country": "Rosja",
             "capital": "Moskwa"
         },
-        "flag": "https://flagpedia.net/data/flags/h80/ru.png"
+        "flag": "images/flags/ru.png"
     },
     {
         "id": 37,
@@ -441,7 +441,7 @@
             "country": "San Marino",
             "capital": "San Marino"
         },
-        "flag": "https://flagpedia.net/data/flags/h80/sm.png"
+        "flag": "images/flags/sm.png"
     },
     {
         "id": 38,
@@ -453,7 +453,7 @@
             "country": "Serbia",
             "capital": "Belgrad"
         },
-        "flag": "https://flagpedia.net/data/flags/h80/rs.png"
+        "flag": "images/flags/rs.png"
     },
     {
         "id": 39,
@@ -465,7 +465,7 @@
             "country": "Słowacja",
             "capital": "Bratysława"
         },
-        "flag": "https://flagpedia.net/data/flags/h80/sk.png"
+        "flag": "images/flags/sk.png"
     },
     {
         "id": 40,
@@ -477,7 +477,7 @@
             "country": "Słowenia",
             "capital": "Lublana"
         },
-        "flag": "https://flagpedia.net/data/flags/h80/si.png"
+        "flag": "images/flags/si.png"
     },
     {
         "id": 41,
@@ -489,7 +489,7 @@
             "country": "Hiszpania",
             "capital": "Madryt"
         },
-        "flag": "https://flagpedia.net/data/flags/h80/es.png"
+        "flag": "images/flags/es.png"
     },
     {
         "id": 42,
@@ -501,7 +501,7 @@
             "country": "Szwecja",
             "capital": "Sztokholm"
         },
-        "flag": "https://flagpedia.net/data/flags/h80/se.png"
+        "flag": "images/flags/se.png"
     },
     {
         "id": 43,
@@ -513,7 +513,7 @@
             "country": "Szwajcaria",
             "capital": "Berno"
         },
-        "flag": "https://flagpedia.net/data/flags/h80/ch.png"
+        "flag": "images/flags/ch.png"
     },
     {
         "id": 44,
@@ -525,7 +525,7 @@
             "country": "Ukraina",
             "capital": "Kijów"
         },
-        "flag": "https://flagpedia.net/data/flags/h80/ua.png"
+        "flag": "images/flags/ua.png"
     },
     {
         "id": 45,
@@ -537,7 +537,7 @@
             "country": "Wielka Brytania",
             "capital": "Londyn"
         },
-        "flag": "https://flagpedia.net/data/flags/h80/gb.png"
+        "flag": "images/flags/gb.png"
     },
     {
         "id": 46,
@@ -549,7 +549,7 @@
             "country": "Watykan",
             "capital": "Watykan"
         },
-        "flag": "https://flagpedia.net/data/flags/h80/va.png"
+        "flag": "images/flags/va.png"
     },
     {
         "id": 47,
@@ -561,7 +561,7 @@
             "country": "Turcja",
             "capital": "Ankara"
         },
-        "flag": "https://flagpedia.net/data/flags/h80/tr.png"
+        "flag": "images/flags/tr.png"
     }
 
 
