@@ -14,7 +14,7 @@ sap.ui.define([
             if (hostname === 'localhost' || hostname === '127.0.0.1') {
                 // Running locally
                 console.log('Using local URL');
-                this.sBaseUrl = "http://localhost:3300";
+                this.sBaseUrl = "http://localhost:3300/api";
             } else {
                 // Running in production (Railway)
                 console.log('Using production URL');
@@ -24,7 +24,7 @@ sap.ui.define([
 
         fetchRankingData: function () {
             return new Promise((resolve, reject) => {
-                fetch(this.sBaseUrl + '/getAllScores')
+                fetch(this.sBaseUrl + '/scores')
                     .then(response => response.json())
                     .then(data => {
                         const model = new JSONModel(data);
@@ -38,7 +38,7 @@ sap.ui.define([
         },
 
         saveData: function (data) {
-            return fetch(`${this.sBaseUrl}/saveScore`, {
+            return fetch(`${this.sBaseUrl}/scores`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'

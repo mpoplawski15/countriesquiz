@@ -3,8 +3,7 @@
     "version": "1.0.0",
     "description": "Countries",
     "scripts": {
-        "start": "node server.js",
-        "test": "ui5 serve -o index.html",
+        "start": "ui5 serve -o index.html",
         "build": "ui5 build --all --clean-dest"
     },
     "devDependencies": {
