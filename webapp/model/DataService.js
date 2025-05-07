@@ -18,7 +18,7 @@ sap.ui.define([
             } else {
                 // Running in production (Railway)
                 console.log('Using production URL');
-                this.sBaseUrl = ""; // Empty string for same-origin requests
+                this.sBaseUrl = "https://countriesquizserver-production.up.railway.app/api"; 
             }
         },
 
