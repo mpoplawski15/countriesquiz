@@ -1,6 +1,7 @@
 sap.ui.define([
-    "sap/ui/model/json/JSONModel"
-], function (JSONModel) {
+    "sap/ui/model/json/JSONModel",
+    "../utils/Utils"
+], function (JSONModel, Utils) {
     return {
         _aLanguageIndexPairs: [{ language: "en", index: 0 }, { language: "pl", index: 1 }],
         _Data: {},
@@ -269,7 +270,7 @@ sap.ui.define([
 
         checkIfAnswerCorrect(sAnswer) {
             var isAnswercorrect = false;
-            if (this._Data.oAnswerData.correctAnswer === sAnswer) {
+            if (Utils.compareNormalizedStrings(this._Data.oAnswerData.correctAnswer, sAnswer)) {
                 isAnswercorrect = true;
             } else {
                 isAnswercorrect = false;
@@ -288,7 +289,7 @@ sap.ui.define([
         },
 
         setStartingScore() {
-            this._Data.oCounter.iScore = 100 * this._Data.oCounter.iQuestionsLimit * this._Data.oCounter.fScoreMultiplier;
+            this._Data.oCounter.iScore = Math.ceil(100 * this._Data.oCounter.iQuestionsLimit * this._Data.oCounter.fScoreMultiplier);
         },
 
         getScore() {
