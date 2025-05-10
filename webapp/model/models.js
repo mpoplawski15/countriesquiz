@@ -2,11 +2,26 @@ sap.ui.define([
     "sap/ui/model/json/JSONModel",
     "../utils/Utils"
 ], function (JSONModel, Utils) {
+    var oModel = null;
     return {
         _aLanguageIndexPairs: [{ language: "en", index: 0 }, { language: "pl", index: 1 }],
         _Data: {},
         init: function () {
             this._Data = {
+                oUser: {
+                    loggedIn: false,
+                    username: "",
+                    userId: ""
+                },
+                oRegister: {
+                    isLogin: true,
+                    username: "",
+                    password: "",
+                    email: "",
+                    confirmPassword: "",
+                    rememberMe: false,
+                    termsAccepted: false
+                },
                 oConfig: {
                     selectedLanguageIndex: 0,
                     tempSelectedLanguageIndex: 0,
@@ -77,10 +92,30 @@ sap.ui.define([
 
             }
             this.defineLanguage();
+
+            if (!oModel) {
+                oModel = new JSONModel(this._Data);
+                oModel.setDefaultBindingMode("TwoWay");
+            }
+        },
+
+        getModel: function() {
+            if (!oModel) {
+                this.init();
+            }
+            return oModel;
+        },
+        
+        updateModel: function() {
+            if (oModel) {
+                oModel.setData(this._Data);
+                oModel.refresh(true);
+            }
         },
 
         setQuestionsLimit(iQuestionsLimit) {
             this._Data.oCounter.iQuestionsLimit = iQuestionsLimit;
+            this.updateModel();
         },
 
         getQuestionsLimit() {
@@ -89,6 +124,7 @@ sap.ui.define([
 
         setCurrentQuestionNo(iCurrentQuestionNo) {
             this._Data.oCounter.iCurrentQuestionNo = iCurrentQuestionNo;
+            this.updateModel();
         },
 
         getCurrentQuestionNo() {
@@ -216,6 +252,7 @@ sap.ui.define([
                     this._Data.oAnswerData.buttonGText = this._Data.aPossibleAnswers[aUniqueIndexNo[6]][sObjectKey];
                     break;
             }
+            this.updateModel();
         },
 
         clearCounter() {
@@ -223,11 +260,13 @@ sap.ui.define([
             this._Data.oCounter.iCorrectAnswers = 0;
             this._Data.oCounter.iScore = 0;
             this._Data.oCounter.fScoreMultiplier = 0;
+            this.updateModel();
 
         },
 
         setScoreMultiplier(fScoreMultiplier) {
             this._Data.oCounter.fScoreMultiplier = fScoreMultiplier;
+            this.updateModel();
         },
 
         setABCDButtonsVisible() {
@@ -235,6 +274,7 @@ sap.ui.define([
             this._Data.oButtonStates.buttonBVisible = true;
             this._Data.oButtonStates.buttonCVisible = true;
             this._Data.oButtonStates.buttonDVisible = true;
+            this.updateModel();
         },
 
         setABCDEFGHButtonsVisible() {
@@ -246,10 +286,12 @@ sap.ui.define([
             this._Data.oButtonStates.buttonFVisible = true;
             this._Data.oButtonStates.buttonGVisible = true;
             this._Data.oButtonStates.buttonHVisible = true;
+            this.updateModel();
         },
 
         setInputFieldVisible() {
             this._Data.oInputField.visible = true;
+            this.updateModel();
         },
 
         resetAnswersVisibility() {
@@ -262,10 +304,12 @@ sap.ui.define([
             this._Data.oButtonStates.buttonGVisible = false;
             this._Data.oButtonStates.buttonHVisible = false;
             this._Data.oInputField.visible = false;
+            this.updateModel();
         },
 
         setCorrectAnswerVisible(bVisible) {
             this._Data.oInputField.correctAnswerVisible = bVisible;
+            this.updateModel();
         },
 
         checkIfAnswerCorrect(sAnswer) {
@@ -286,10 +330,12 @@ sap.ui.define([
                     this._Data.oCounter.iScore = this._Data.oCounter.iScore - iScoreToDeduct;
                 }
             }
+            this.updateModel();
         },
 
         setStartingScore() {
             this._Data.oCounter.iScore = Math.ceil(100 * this._Data.oCounter.iQuestionsLimit * this._Data.oCounter.fScoreMultiplier);
+            this.updateModel();
         },
 
         getScore() {
@@ -300,6 +346,7 @@ sap.ui.define([
             this._Data.oRanking.europeTopScores = data.aScoresEurope;
             this._Data.oRanking.asiaTopScores = data.aScoresAsia;
             this._Data.oRanking.africaTopScores = data.aScoresAfrica;
+            this.updateModel();
         },
 
         getCorrectAnswer() {
@@ -308,10 +355,12 @@ sap.ui.define([
 
         markAnswerAsCorrect() {
             this._Data.oInputField.styleClass = "correctAnswer";
+            this.updateModel();
         },
 
         markAnswerAsWrong() {
             this._Data.oInputField.styleClass = "wrongAnswer";
+            this.updateModel();
         },
 
         markCorrectAnswer() {
@@ -332,6 +381,7 @@ sap.ui.define([
             } else if (this._Data.oAnswerData.correctAnswer === this._Data.oAnswerData.buttonHText) {
                 this._Data.oButtonStates.buttonHState = "Accept"
             }
+            this.updateModel();
         },
 
         clearButtons() {
@@ -359,6 +409,7 @@ sap.ui.define([
             this._Data.oButtonStates.buttonFEnabled = true;
             this._Data.oButtonStates.buttonGEnabled = true;
             this._Data.oButtonStates.buttonHEnabled = true;
+            this.updateModel();
         },
 
         getRndInteger(min, max) {
@@ -399,10 +450,12 @@ sap.ui.define([
                 default:
                     this._Data.oConfig.selectedLanguageIndex = 0;
             }
+            this.updateModel();
         },
 
         setTempSelectedLanguageIndex(iSelectedIndex) {
             this._Data.oConfig.tempSelectedLanguageIndex = iSelectedIndex;
+            this.updateModel();
         },
 
         setLanguage() {
@@ -413,6 +466,7 @@ sap.ui.define([
                     return;
                 }
             });
+            this.updateModel();
 
         },
 
@@ -426,26 +480,32 @@ sap.ui.define([
 
         resetTempSelectedLanguageIndex() {
             this._Data.oConfig.tempSelectedLanguageIndex = this._Data.oConfig.selectedLanguageIndex;
+            this.updateModel();
         },
 
         setRegionPlayConfig(iSelectedRegionIndex) {
             this._Data.oPlayConfig.iSelectedRegionIndex = iSelectedRegionIndex;
+            this.updateModel();
         },
 
         setDifficultyPlayConfig(iSelectedDifficultyIndex) {
             this._Data.oPlayConfig.iSelectedDifficultyIndex = iSelectedDifficultyIndex;
+            this.updateModel();
         },
 
         setModePlayCapitals(bCapitals) {
             this._Data.oPlayConfig.bCapitals = bCapitals;
+            this.updateModel();
         },
 
         setModePlayFlags(bFlags) {
             this._Data.oPlayConfig.bFlags = bFlags;
+            this.updateModel();
         },
 
         setLengthPlayConfig(iSelectedLengthIndex) {
             this._Data.oPlayConfig.iSelectedLengthIndex = iSelectedLengthIndex;
+            this.updateModel();
         },
 
         getPlayConfiguration() {
@@ -454,6 +514,7 @@ sap.ui.define([
 
         setPlayConfiguration(oPlayConfig) {
             this._Data.oPlayConfig = oPlayConfig;
+            this.updateModel();
         },
 
         getCountriesData() {
@@ -462,10 +523,12 @@ sap.ui.define([
 
         setCountriesData(aCountriesData) {
             this._Data.aCountriesData = aCountriesData;
+            this.updateModel();
         },
 
         setPossibleAnswers(aPossibleAnswers) {
             this._Data.aPossibleAnswers = aPossibleAnswers;
+            this.updateModel();
         },
 
         getQuestionAnswered() {
@@ -482,14 +545,42 @@ sap.ui.define([
             this._Data.oButtonStates.buttonFEnabled = false;
             this._Data.oButtonStates.buttonGEnabled = false;
             this._Data.oButtonStates.buttonHEnabled = false;
+            this.updateModel();
         },
 
         addOneToCorrectAnswers() {
             this._Data.oCounter.iCorrectAnswers = this._Data.oCounter.iCorrectAnswers + 1;
+            this.updateModel();
         },
 
         getScoreAsPercentage() {
             return this._Data.oCounter.iScoreAsPercantage = Math.floor((this._Data.oCounter.iCorrectAnswers / this._Data.oCounter.iQuestionsLimit) * 100);
+        },
+
+        setIsLogin(bIsLogin) {
+            this._Data.oRegister.isLogin = bIsLogin;
+            this.updateModel();
+        },
+
+        getIsLogin() {
+            return this._Data.oRegister.isLogin;
+        },
+
+        setUsername(sUsername) {
+            this._Data.oUser.username = sUsername;
+            this._Data.oUser.loggedIn = true;
+            this.updateModel();
+        },
+
+        isLoggedIn() {
+            return this._Data.oUser.loggedIn;
+        },
+
+        clearUser() {
+            this._Data.oUser.userId = "";
+            this._Data.oUser.username = "";
+            this._Data.oUser.loggedIn = false;
+            this.updateModel();
         }
 
     };

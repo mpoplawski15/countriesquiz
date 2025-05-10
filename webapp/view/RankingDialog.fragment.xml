@@ -6,7 +6,8 @@
         id="idDialogRanking"
         horizontalScrolling="false"
         title="{i18n>titleRanking}"
-        titleAlignment="Center">
+        titleAlignment="Center"
+        stretch="true">
         <content>
             <VBox width="100%" height="100%" justifyContent="Center"
                 alignItems="Center"

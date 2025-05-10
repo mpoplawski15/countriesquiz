@@ -10,7 +10,7 @@ sap.ui.define([
 	return BaseController.extend("mpp.countries.controller.Prepare", {
 		onInit() {
 			ValidationManager.init(this);
-			this.setViewModel();
+			// this.setViewModel();
 			this.getRouter().getRoute("prepare").attachPatternMatched(this.onObjectMatched, this);
 		},
 

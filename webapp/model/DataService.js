@@ -1,7 +1,8 @@
 sap.ui.define([
     "sap/ui/base/Object",
-    "sap/ui/model/json/JSONModel"
-], function (Object, JSONModel) {
+    "sap/ui/model/json/JSONModel",
+    "../model/AuthService"
+], function (Object, JSONModel, AuthService) {
     "use strict";
 
     return {
@@ -20,6 +21,8 @@ sap.ui.define([
                 console.log('Using production URL');
                 this.sBaseUrl = "https://countriesquizserver-production.up.railway.app/api"; 
             }
+
+            // AuthService.init();
         },
 
         fetchRankingData: function () {

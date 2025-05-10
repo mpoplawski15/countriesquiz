@@ -1,0 +1,111 @@
+<core:FragmentDefinition
+	xmlns="sap.m"
+	xmlns:core="sap.ui.core"
+	xmlns:f="sap.ui.layout.form">
+	<Dialog
+		id="loginRegisterDialog"
+		title="{= ${/oRegister/isLogin} ? 'Log In' : 'Register' }"
+		contentWidth="400px"
+		class="sapUiResponsiveMargin">
+		<beginButton>
+			<Button
+				text="{= ${/oRegister/isLogin} ? 'Log In' : 'Register' }"
+				type="Emphasized"
+				press="onSubmitPress"/>
+		</beginButton>
+		<endButton>
+			<Button
+				text="Cancel"
+				press="onCancelPress"/>
+		</endButton>
+		<content>
+			<VBox class="sapUiSmallMargin">
+				<f:SimpleForm
+					editable="true"
+					layout="ResponsiveGridLayout"
+					labelSpanXL="4"
+					labelSpanL="4"
+					labelSpanM="4"
+					labelSpanS="12"
+					adjustLabelSpan="false"
+					emptySpanXL="0"
+					emptySpanL="0"
+					emptySpanM="0"
+					emptySpanS="0"
+					columnsXL="1"
+					columnsL="1"
+					columnsM="1"
+					singleContainerFullSize="false">
+					<f:content>
+						<!-- Login Form -->
+						<VBox visible="{/oRegister/isLogin}">
+							<Label text="Email / Username" required="true"/>
+							<Input
+								id="loginUsername"
+								placeholder="Enter email or username"
+								value="{/oRegister/username}"/>
+							
+							<Label text="Password" required="true"/>
+							<Input
+								id="loginPassword"
+								type="Password"
+								placeholder="Enter password"
+								value="{/oRegister/password}"/>
+							
+							<CheckBox 
+								id="rememberMe"
+								text="Remember me"
+								selected="{/oRegister/rememberMe}"/>
+							
+							<Link
+								text="Forgot password?"
+								press="onForgotPasswordPress"
+								class="sapUiTinyMarginTop sapUiTinyMarginBottom"/>
+						</VBox>
+						
+						<!-- Register Form -->
+						<VBox visible="{= !${/oRegister/isLogin}}">
+							<Label text="Email" required="true"/>
+							<Input
+								id="registerEmail"
+								type="Email"
+								placeholder="Enter email"
+								value="{/oRegister/email}"/>
+							
+							<Label text="Username" required="true"/>
+							<Input
+								id="registerUsername"
+								placeholder="Choose username"
+								value="{/oRegister/username}"/>
+							
+							<Label text="Password" required="true"/>
+							<Input
+								id="registerPassword"
+								type="Password"
+								placeholder="Create password"
+								value="{/oRegister/password}"/>
+							
+							<Label text="Confirm Password" required="true"/>
+							<Input
+								id="confirmPassword"
+								type="Password"
+								placeholder="Confirm password"
+								value="{/oRegister/confirmPassword}"/>
+							
+							<CheckBox
+								id="termsAccept"
+								text="I accept the Terms and Conditions"
+								selected="{/oRegister/termsAccepted}"
+								required="true"/>
+						</VBox>
+					</f:content>
+				</f:SimpleForm>
+				
+				<Link
+					text="{= ${/oRegister/isLogin} ? 'Need an account? Register' : 'Already have an account? Log in' }"
+					press="handleToggleLoginRegister"
+					class="sapUiSmallMarginTop"/>
+			</VBox>
+		</content>
+	</Dialog>
+</core:FragmentDefinition>

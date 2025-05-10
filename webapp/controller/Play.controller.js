@@ -12,7 +12,7 @@ sap.ui.define([
     return BaseController.extend("mpp.countries.controller.Prepare", {
         onInit() {
             DataService.init();
-            this.setViewModel();
+            // this.setViewModel();
             this.getRouter().getRoute("play").attachPatternMatched(this.onObjectMatched, this);
             this.getView().addEventDelegate({
                 onBeforeHide: function (oEvent) {
