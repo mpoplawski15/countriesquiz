@@ -7,7 +7,7 @@ sap.ui.define([
     return Controller.extend("mpp.countries.controller.App", {
         onInit() {
             this.getView().addStyleClass(this.getOwnerComponent().getContentDensityClass());
-            Model.init(this);
+            // Model.init(this);
         }
     });
 });

@@ -84,12 +84,12 @@ sap.ui.define([
                     title: "User Menu",
                     buttons: [
                         new sap.m.Button({
-                            text: "View Profile",
+                            text: "{i18n>viewProfile}",
                             icon: "sap-icon://person-placeholder",
                             press: this.handleViewProfile.bind(this)
                         }),
                         new sap.m.Button({
-                            text: "Log Out",
+                            text: "{i18n>logOut}",
                             icon: "sap-icon://log-out",
                             press: this.handleLogout.bind(this)
                         })

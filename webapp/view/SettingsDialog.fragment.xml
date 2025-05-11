@@ -23,10 +23,10 @@
         </content>
         <buttons>
             <Button
-                text="Confirm"
+                text="{i18n>buttonConfirm}"
                 press="handleConfirmSettingsDialog" />
             <Button
-                text="Cancel"
+                text="{i18n>buttonCancel}"
                 press="handleCloseSettingsDialog" />
         </buttons>
     </Dialog>

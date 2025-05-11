@@ -4,18 +4,18 @@
 	xmlns:f="sap.ui.layout.form">
 	<Dialog
 		id="loginRegisterDialog"
-		title="{= ${/oRegister/isLogin} ? 'Log In' : 'Register' }"
+		title="{= ${/oRegister/isLogin} ? ${i18n>titleLogIn} : ${i18n>titleRegister} }"
 		contentWidth="400px"
 		class="sapUiResponsiveMargin">
 		<beginButton>
 			<Button
-				text="{= ${/oRegister/isLogin} ? 'Log In' : 'Register' }"
+				text="{= ${/oRegister/isLogin} ? ${i18n>buttonLogIn} : ${i18n>buttonRegister} }"
 				type="Emphasized"
 				press="onSubmitPress"/>
 		</beginButton>
 		<endButton>
 			<Button
-				text="Cancel"
+				text="{i18n>buttonCancel}"
 				press="onCancelPress"/>
 		</endButton>
 		<content>
@@ -39,62 +39,62 @@
 					<f:content>
 						<!-- Login Form -->
 						<VBox visible="{/oRegister/isLogin}">
-							<Label text="Email / Username" required="true"/>
+							<Label text="{i18n>labelEmailUsername}" required="true"/>
 							<Input
 								id="loginUsername"
-								placeholder="Enter email or username"
+								placeholder="{i18n>placeholderEmailUsername}"
 								value="{/oRegister/username}"/>
 							
-							<Label text="Password" required="true"/>
+							<Label text="{i18n>labelPassword}" required="true"/>
 							<Input
 								id="loginPassword"
 								type="Password"
-								placeholder="Enter password"
+								placeholder="{i18n>placeholderPassword}"
 								value="{/oRegister/password}"/>
 							
 							<CheckBox 
 								id="rememberMe"
-								text="Remember me"
+								text="{i18n>labelRememberMe}"
 								selected="{/oRegister/rememberMe}"/>
 							
 							<Link
-								text="Forgot password?"
+								text="{i18n>linkForgotPassword}"
 								press="onForgotPasswordPress"
 								class="sapUiTinyMarginTop sapUiTinyMarginBottom"/>
 						</VBox>
 						
 						<!-- Register Form -->
 						<VBox visible="{= !${/oRegister/isLogin}}">
-							<Label text="Email" required="true"/>
+							<Label text="{i18n>labelEmail}" required="true"/>
 							<Input
 								id="registerEmail"
 								type="Email"
-								placeholder="Enter email"
+								placeholder="{i18n>placeholderEmail}"
 								value="{/oRegister/email}"/>
 							
-							<Label text="Username" required="true"/>
+							<Label text="{i18n>labelUsername}" required="true"/>
 							<Input
 								id="registerUsername"
-								placeholder="Choose username"
+								placeholder="{i18n>placeholderUsername}"
 								value="{/oRegister/username}"/>
 							
-							<Label text="Password" required="true"/>
+							<Label text="{i18n>labelPassword}" required="true"/>
 							<Input
 								id="registerPassword"
 								type="Password"
-								placeholder="Create password"
+								placeholder="{i18n>placeholderPassword}"
 								value="{/oRegister/password}"/>
 							
-							<Label text="Confirm Password" required="true"/>
+							<Label text="{i18n>labelConfirmPassword}" required="true"/>
 							<Input
 								id="confirmPassword"
 								type="Password"
-								placeholder="Confirm password"
+								placeholder="{i18n>placeholderConfirmPassword}"
 								value="{/oRegister/confirmPassword}"/>
 							
 							<CheckBox
 								id="termsAccept"
-								text="I accept the Terms and Conditions"
+								text="{i18n>labelAcceptTerms}"
 								selected="{/oRegister/termsAccepted}"
 								required="true"/>
 						</VBox>
@@ -102,7 +102,7 @@
 				</f:SimpleForm>
 				
 				<Link
-					text="{= ${/oRegister/isLogin} ? 'Need an account? Register' : 'Already have an account? Log in' }"
+					text="{= ${/oRegister/isLogin} ? ${i18n>linkRegister} : ${i18n>linkLogIn} }"
 					press="handleToggleLoginRegister"
 					class="sapUiSmallMarginTop"/>
 			</VBox>
