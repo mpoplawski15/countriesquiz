@@ -289,10 +289,11 @@ sap.ui.define([
         },
 
         onResendVerificationPress: function () {
+            const oResourceBundle = this.getResourceBundle();
             const email = this.oEmailVerificationModel.getProperty("/email");
 
             if (!email) {
-                MessageToast.show("Email address is missing");
+                MessageToast.show(oResourceBundle.getText("emailAddressMissing"));
                 return;
             }
 
@@ -301,13 +302,37 @@ sap.ui.define([
             AuthService.resendVerificationEmail(email)
                 .then(response => {
                     sap.ui.core.BusyIndicator.hide();
-                    MessageToast.show("Verification email has been sent to " + email);
+                    MessageToast.show(oResourceBundle.getText("emailSentSuccess", [email]));
                 })
                 .catch(error => {
                     sap.ui.core.BusyIndicator.hide();
 
-                    let errorMessage = "Failed to resend verification email";
-                    if (error && error.error) {
+                    let errorMessage = oResourceBundle.getText("resendFailedGeneric");
+
+                    // Handle rate limit error with more user-friendly message
+                    if (error && error.status === 429) {
+                        try {
+                            if (error.retryAfter) {
+                                // Format the waiting time in a user-friendly way
+                                let waitTime;
+                                const seconds = error.retryAfter;
+
+                                if (seconds < 60) {
+                                    waitTime = seconds + " " + oResourceBundle.getText("seconds");
+                                } else {
+                                    const minutes = Math.ceil(seconds / 60);
+                                    if (minutes > 1) {
+                                        waitTime = minutes + " " + oResourceBundle.getText("minutes");
+                                    } else {
+                                        waitTime = minutes + " " + oResourceBundle.getText("minute")
+                                    }
+                                }
+                                errorMessage = oResourceBundle.getText("rateLimitExceeded", [waitTime]);
+                            }
+                        } catch (e) {
+                            // Use default error message if parsing fails
+                        }
+                    } else if (error && error.error) {
                         errorMessage = error.error;
                     }
 
