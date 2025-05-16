@@ -5,28 +5,33 @@ sap.ui.define([
     "sap/m/MessageToast",
     "../model/AuthService",
     "sap/m/MessageBox",
-    "sap/ui/core/Fragment"
-], (BaseController, Model, DataService, MessageToast, AuthService, MessageBox, Fragment) => {
+    "sap/ui/core/Fragment",
+    "sap/ui/model/json/JSONModel"
+], (BaseController, Model, DataService, MessageToast, AuthService, MessageBox, Fragment, JSONModel) => {
     "use strict";
 
     return BaseController.extend("mpp.countries.controller.MainMenu", {
         onInit() {
             DataService.init();
+            AuthService.init();
 
-            jQuery.sap.delayedCall(1, this, function() {
+            // Initialize email verification model
+            this.oEmailVerificationModel = new JSONModel({
+                email: ""
+            });
+            this.getView().setModel(this.oEmailVerificationModel, "emailVerification");
+
+            jQuery.sap.delayedCall(1, this, function () {
                 this.checkLoginStatus();
-              });
+            });
         },
 
         checkLoginStatus: function () {
-            var sToken = localStorage.getItem("authToken");
-            var sUsername;
-            if(localStorage.getItem("user")){
-                sUsername = JSON.parse(localStorage.getItem("user")).username;
-            }
-
-            if (sToken && sUsername) {
-                Model.setUsername(sUsername);
+            if (AuthService.isLoggedIn()) {
+                var oUser = AuthService.getCurrentUser();
+                if (oUser && oUser.username) {
+                    Model.setUsername(oUser.username);
+                }
             }
         },
 
@@ -106,16 +111,8 @@ sap.ui.define([
         },
 
         handleLogout: function () {
-            // Clear user data and token
-            localStorage.removeItem("authToken");
-            localStorage.removeItem("user");
-
+            AuthService.logout();
             Model.clearUser();
-
-            var oModel = new sap.ui.model.json.JSONModel(Model.getData());
-            this.getView().setModel(oModel);
-
-            this.getView().getModel().refresh();
             sap.m.MessageToast.show("Successfully logged out");
         },
 
@@ -134,6 +131,12 @@ sap.ui.define([
                     this.oLoginDialog.open();
                 }.bind(this));
             } else {
+                if (AuthService.isRememberMeEnabled()) {
+                    var oRegisterData = Model.getData().oRegister;
+                    oRegisterData.rememberMe = true;
+                    Model.updateModel();
+                }
+
                 this.oLoginDialog.open();
             }
         },
@@ -169,7 +172,7 @@ sap.ui.define([
 
             sap.ui.core.BusyIndicator.show(0);
 
-            AuthService.login(sUsername, sPassword)
+            AuthService.login(sUsername, sPassword, bRememberMe)
                 .then(response => {
                     sap.ui.core.BusyIndicator.hide();
                     MessageToast.show("Login successful!");
@@ -178,6 +181,15 @@ sap.ui.define([
                 })
                 .catch(error => {
                     sap.ui.core.BusyIndicator.hide();
+
+                    // Check if this is an email verification error
+                    if (error && error.emailVerification) {
+                        this.oLoginDialog.close();
+                        this.oEmailVerificationModel.setProperty("/email", error.email);
+                        this.openEmailVerificationDialog();
+                        return;
+                    }
+
 
                     let errorMessage = "Login failed";
                     if (error && error.error) {
@@ -224,9 +236,19 @@ sap.ui.define([
             AuthService.register(sUsername, sEmail, sPassword)
                 .then(response => {
                     sap.ui.core.BusyIndicator.hide();
-                    MessageBox.success("Registration successful! Please log in.", {
+                    this.oLoginDialog.close();
+
+                    MessageBox.success("Registration successful! Please check your email to verify your account.", {
                         onClose: function () {
-                            this.oLoginDialog.close();
+                            // Set verification email for the dialog
+                            this.oEmailVerificationModel.setProperty("/email", sEmail);
+                            // this.openEmailVerificationDialog();
+
+                            // Set the remember me flag to true after registration for better UX
+                            var oRegisterData = Model.getData().oRegister;
+                            oRegisterData.rememberMe = true;
+                            // Switch to login view
+                            Model.setIsLogin(true);
                         }.bind(this)
                     });
                 })
@@ -242,6 +264,56 @@ sap.ui.define([
                 });
         },
 
+        // Email verification dialog methods
+        openEmailVerificationDialog: function () {
+            var oView = this.getView();
+
+            if (!this.oEmailVerificationDialog) {
+                // Load the fragment asynchronously
+                Fragment.load({
+                    id: oView.getId(),
+                    name: "mpp.countries.view.EmailVerificationDialog",
+                    controller: this
+                }).then(function (oDialog) {
+                    oView.addDependent(oDialog);
+                    this.oEmailVerificationDialog = oDialog;
+                    this.oEmailVerificationDialog.open();
+                }.bind(this));
+            } else {
+                this.oEmailVerificationDialog.open();
+            }
+        },
+
+        onCloseVerificationDialog: function () {
+            this.oEmailVerificationDialog.close();
+        },
+
+        onResendVerificationPress: function () {
+            const email = this.oEmailVerificationModel.getProperty("/email");
+
+            if (!email) {
+                MessageToast.show("Email address is missing");
+                return;
+            }
+
+            sap.ui.core.BusyIndicator.show(0);
+
+            AuthService.resendVerificationEmail(email)
+                .then(response => {
+                    sap.ui.core.BusyIndicator.hide();
+                    MessageToast.show("Verification email has been sent to " + email);
+                })
+                .catch(error => {
+                    sap.ui.core.BusyIndicator.hide();
+
+                    let errorMessage = "Failed to resend verification email";
+                    if (error && error.error) {
+                        errorMessage = error.error;
+                    }
+
+                    MessageBox.error(errorMessage);
+                });
+        },
 
         handleToggleLoginRegister() {
             if (Model.getIsLogin()) {
