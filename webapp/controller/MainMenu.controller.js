@@ -113,7 +113,7 @@ sap.ui.define([
         handleLogout: function () {
             AuthService.logout();
             Model.clearUser();
-            sap.m.MessageToast.show("Successfully logged out");
+            sap.m.MessageToast.show(this.getText("logoutSuccessful"));
         },
 
         openLoginDialog() {
@@ -166,7 +166,7 @@ sap.ui.define([
 
             // Validate inputs
             if (!sUsername || !sPassword) {
-                sap.m.MessageToast.show("Please enter both username and password");
+                sap.m.MessageToast.show(this.getText("enterUsernamePassword"));
                 return;
             }
 
@@ -175,7 +175,7 @@ sap.ui.define([
             AuthService.login(sUsername, sPassword, bRememberMe)
                 .then(response => {
                     sap.ui.core.BusyIndicator.hide();
-                    MessageToast.show("Login successful!");
+                    MessageToast.show(this.getText("loginSuccessful"));
                     Model.setUsername(sUsername);
                     this.oLoginDialog.close();
                 })
@@ -210,24 +210,24 @@ sap.ui.define([
 
             // Validate inputs
             if (!sUsername || !sPassword || !sEmail || !sConfirmPassword) {
-                sap.m.MessageToast.show("Please fill in all required fields");
+                sap.m.MessageToast.show(this.getText("fillAllFields"));
                 return;
             }
 
             if (sPassword !== sConfirmPassword) {
-                sap.m.MessageToast.show("Passwords do not match");
+                sap.m.MessageToast.show(this.getText("passwordsDoNotMatch"));
                 return;
             }
 
             if (!bTermsAccepted) {
-                sap.m.MessageToast.show("Please accept the Terms and Conditions");
+                sap.m.MessageToast.show(this.getText("acceptTerms"));
                 return;
             }
 
             // Email validation using regex
             var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
             if (!emailRegex.test(sEmail)) {
-                sap.m.MessageToast.show("Please enter a valid email address");
+                sap.m.MessageToast.show(this.getText("validEmail"));
                 return;
             }
 
@@ -238,7 +238,7 @@ sap.ui.define([
                     sap.ui.core.BusyIndicator.hide();
                     this.oLoginDialog.close();
 
-                    MessageBox.success("Registration successful! Please check your email to verify your account.", {
+                    MessageBox.success(this.getText("registrationSuccessful"), {
                         onClose: function () {
                             // Set verification email for the dialog
                             this.oEmailVerificationModel.setProperty("/email", sEmail);
@@ -289,11 +289,10 @@ sap.ui.define([
         },
 
         onResendVerificationPress: function () {
-            const oResourceBundle = this.getResourceBundle();
             const email = this.oEmailVerificationModel.getProperty("/email");
 
             if (!email) {
-                MessageToast.show(oResourceBundle.getText("emailAddressMissing"));
+                MessageToast.show(this.getText("emailAddressMissing"));
                 return;
             }
 
@@ -302,12 +301,12 @@ sap.ui.define([
             AuthService.resendVerificationEmail(email)
                 .then(response => {
                     sap.ui.core.BusyIndicator.hide();
-                    MessageToast.show(oResourceBundle.getText("emailSentSuccess", [email]));
+                    MessageToast.show(this.getText("emailSentSuccess", [email]));
                 })
                 .catch(error => {
                     sap.ui.core.BusyIndicator.hide();
 
-                    let errorMessage = oResourceBundle.getText("resendFailedGeneric");
+                    let errorMessage = this.getText("resendFailedGeneric");
 
                     // Handle rate limit error with more user-friendly message
                     if (error && error.status === 429) {
@@ -318,16 +317,16 @@ sap.ui.define([
                                 const seconds = error.retryAfter;
 
                                 if (seconds < 60) {
-                                    waitTime = seconds + " " + oResourceBundle.getText("seconds");
+                                    waitTime = seconds + " " + this.getText("seconds");
                                 } else {
                                     const minutes = Math.ceil(seconds / 60);
                                     if (minutes > 1) {
-                                        waitTime = minutes + " " + oResourceBundle.getText("minutes");
+                                        waitTime = minutes + " " + this.getText("minutes");
                                     } else {
-                                        waitTime = minutes + " " + oResourceBundle.getText("minute")
+                                        waitTime = minutes + " " + this.getText("minute")
                                     }
                                 }
-                                errorMessage = oResourceBundle.getText("rateLimitExceeded", [waitTime]);
+                                errorMessage = this.getText("rateLimitExceeded", [waitTime]);
                             }
                         } catch (e) {
                             // Use default error message if parsing fails
